@@ -52,3 +52,38 @@ class WavePainter extends CustomPainter {
    @override
   bool shouldRepaint(CustomPainter oldDelegate) => false;
 }
+
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
+
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  final _formKey = GlobalKey<FormState>();
+  final _emailController = TextEditingController(text: 'ekfbryntikh@gmail.com');
+  final _passwordController = TextEditingController(text: 'password123');
+  bool _obscurePassword = true;
+
+  void _login() {
+    if (_formKey.currentState!.validate()) {
+      Navigator.of(context).pushReplacement(
+        PageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) => const HomeScreen(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            const begin = Offset(1.0, 0.0);
+            const end = Offset.zero;
+            const curve = Curves.easeInOut;
+            var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+            var offsetAnimation = animation.drive(tween);
+            return SlideTransition(
+              position: offsetAnimation,
+              child: child,
+            );
+          },
+          transitionDuration: const Duration(milliseconds: 200),
+        ),
+      );
+    }
+  }
