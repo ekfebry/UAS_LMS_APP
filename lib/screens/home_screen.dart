@@ -56,3 +56,30 @@ class _HomeScreenState extends State<HomeScreen> {
       ClassesTab(onBack: () => _onItemTapped(0)),
       NotificationsTab(onBack: () => _onItemTapped(0)),
     ];
+
+     return Scaffold(
+      body: Column(
+        children: [
+          if (_selectedIndex != 2 && _selectedIndex != 1)
+            Container(
+              height: 80,
+              color: const Color(0xFFB74848),
+              child: Stack(
+                children: [
+                  Positioned(
+                    top: 37,
+                    left: 13,
+                    child: SizedBox(
+                      width: 165,
+                      height: 40,
+                      child: Text(
+                        'Hallo,\nEKA FEBRIYANTI KHOLIFAH',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 13,
+                          color: Colors.white,
+                          height: 1.0,
+                        ),
+                      ),
+                    ),
+                  ),
