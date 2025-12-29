@@ -83,3 +83,94 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                   ),
+                  Positioned(
+                    top: 35,
+                    left: 258,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushNamed('/profile');
+                      },
+                      child: Container(
+                        width: 105,
+                        height: 30,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFAF1116),
+                          borderRadius: BorderRadius.circular(25),
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color(0x40000000),
+                              offset: const Offset(0, 4),
+                              blurRadius: 4,
+                              spreadRadius: 0,
+                            ),
+                          ],
+                        ),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              top: 10,
+                              left: 15,
+                              child: Text(
+                                'MAHASISWA',
+                                style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 9,
+                                  color: Colors.white,
+                                  height: 1.0,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    top: 35,
+                    left: 331.39,
+                    child: Container(
+                      width: 32.61363983154297,
+                      height: 31,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: const Color(0xFFFFFFFF),
+                          width: 1,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    top: 38,
+                    left: 335.46,
+                    child: Container(
+                      width: 24.46,
+                      height: 21.14,
+                      child: Image.asset('assets/images/pengguna.png', fit: BoxFit.cover),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          Expanded(
+            child: _widgetOptions.elementAt(_selectedIndex),
+          ),
+          if (_selectedIndex != 2)
+            Container(
+              width: 375,
+              height: 56,
+              decoration: BoxDecoration(
+                color: const Color(0xFFB74848),
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(40),
+                  topRight: Radius.circular(40),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0x40000000),
+                    offset: const Offset(0, 4),
+                    blurRadius: 4,
+                    spreadRadius: 0,
+                  ),
+                ],
+              ),
