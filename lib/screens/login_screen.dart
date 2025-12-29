@@ -105,3 +105,48 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Image.asset('assets/images/telkom_university.jpg', fit: BoxFit.cover),
               ),
             ),
+            Positioned(
+              top: 225,
+              left: 150,
+              child: Container(
+                width: 75,
+                height: 75,
+                decoration: BoxDecoration(
+                  color: const Color(0xFFB74848),
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.25),
+                      blurRadius: 4,
+                      offset: const Offset(0, 3),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+             Positioned(
+              top: 235,
+              left: 168,
+              child: Image.asset('assets/images/logo_telkom.png', width: 39, height: 52),
+            ),
+            Positioned(
+              top: 312,
+              left: 21,
+              child: Text(
+                'Login',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w700,
+                  fontSize: 24,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 416,
+              left: 21,
+              child: Container(
+                width: 332.5,
+                height: 2,
+                color: const Color(0xFFB74848),
+              ),
+            ),
