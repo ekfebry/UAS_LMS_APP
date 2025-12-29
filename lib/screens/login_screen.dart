@@ -48,4 +48,7 @@ class WavePainter extends CustomPainter {
 
     canvas.drawPath(path, paint);
   }
-  
+
+   @override
+  bool shouldRepaint(CustomPainter oldDelegate) => false;
+}
