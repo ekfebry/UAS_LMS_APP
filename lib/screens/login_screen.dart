@@ -14,17 +14,38 @@ class DiagonalClipper extends CustomClipper<Path> {
     return path;
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Login'),
-        backgroundColor: const Color(0xFFB74848),
-        foregroundColor: Colors.white,
-      ),
-      body: const Center(
-        child: Text('Login Screen'),
-      ),
-    );
-  }
+ @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }
+
+class WavePainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()
+      ..color = const Color(0xFFB74848)
+      ..style = PaintingStyle.fill;
+
+    final path = Path();
+    path.moveTo(0, 0);
+
+    path.quadraticBezierTo(
+      size.width * 0.25,
+      size.height * 0.6,
+      size.width * 0.5,
+      size.height * 0.5,
+    );
+
+    path.quadraticBezierTo(
+      size.width * 0.75,
+      size.height * 0.4,
+      size.width,
+      size.height * 0.6,
+    );
+
+    path.lineTo(size.width, size.height);
+    path.lineTo(0, size.height);
+    path.close();
+
+    canvas.drawPath(path, paint);
+  }
+  
