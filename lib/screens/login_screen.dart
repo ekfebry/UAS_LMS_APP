@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'home_screen.dart';
 import '../widgets/help_bottom_sheet.dart';
 
@@ -133,7 +134,7 @@ class _LoginScreenState extends State<LoginScreen> {
               left: 21,
               child: Text(
                 'Login',
-                style: const TextStyle(
+                style: GoogleFonts.poppins(
                   fontWeight: FontWeight.w700,
                   fontSize: 24,
                   color: Colors.black,
@@ -159,7 +160,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   border: InputBorder.none,
                   hintText: 'Email',
                 ),
-                style: const TextStyle(
+                style: GoogleFonts.poppins(
                   fontSize: 14,
                   color: Colors.black,
                 ),
@@ -185,7 +186,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   border: InputBorder.none,
                   hintText: 'Password',
                 ),
-                style: const TextStyle(
+                style: GoogleFonts.poppins(
                   fontSize: 14,
                   color: Colors.black,
                 ),
@@ -239,7 +240,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 child: Text(
                   'Login',
-                  style: const TextStyle(
+                  style: GoogleFonts.poppins(
                     fontWeight: FontWeight.w600,
                     fontSize: 14,
                     color: Colors.white,
@@ -263,7 +264,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Center(
                   child: Text(
                     'Bantuan ?',
-                    style: const TextStyle(
+                    style: GoogleFonts.poppins(
                       fontWeight: FontWeight.w400,
                       fontSize: 13,
                       color: Color(0xFFAF1116),
