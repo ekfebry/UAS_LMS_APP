@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/splash_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/home_screen.dart';
-import 'screens/announcements_screen.dart';
+import 'screens/announcement_screen.dart';
 import 'screens/announcement_detail_screen.dart';
 import 'screens/class_dashboard_screen.dart';
 import 'screens/material_detail_screen.dart';
