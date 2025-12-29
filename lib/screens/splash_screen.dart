@@ -28,3 +28,14 @@ class _SplashScreenState extends State<SplashScreen> {
       );
     });
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: const Color(0xFFB74848),
+      body: Center(
+        child: Image.asset('assets/images/logo.png'),
+      ),
+    );
+  }
+}
