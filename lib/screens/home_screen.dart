@@ -36,17 +36,15 @@ class LeftSlideInPageRoute<T> extends PageRouteBuilder<T> {
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home'),
-        backgroundColor: const Color(0xFFB74848),
-        foregroundColor: Colors.white,
-      ),
-      body: const Center(
-        child: Text('Home Screen'),
-      ),
-    );
-  }
+ @override
+  State<HomeScreen> createState() => _HomeScreenState();
 }
+
+class _HomeScreenState extends State<HomeScreen> {
+  int _selectedIndex = 0;
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
