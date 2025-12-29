@@ -87,3 +87,21 @@ class _LoginScreenState extends State<LoginScreen> {
       );
     }
   }
+
+   @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Form(
+        key: _formKey,
+        child: Stack(
+          children: [
+            Positioned(
+              top: 0,
+              left: 0,
+              right: 0,
+              height: 286,
+              child: ClipPath(
+                clipper: DiagonalClipper(),
+                child: Image.asset('assets/images/telkom_university.jpg', fit: BoxFit.cover),
+              ),
+            ),
