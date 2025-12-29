@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'home_screen.dart';
 import '../widgets/help_bottom_sheet.dart';
 
@@ -134,7 +133,7 @@ class _LoginScreenState extends State<LoginScreen> {
               left: 21,
               child: Text(
                 'Login',
-                style: GoogleFonts.poppins(
+                style: const TextStyle(
                   fontWeight: FontWeight.w700,
                   fontSize: 24,
                   color: Colors.black,
@@ -150,3 +149,143 @@ class _LoginScreenState extends State<LoginScreen> {
                 color: const Color(0xFFB74848),
               ),
             ),
+             Positioned(
+              top: 381,
+              left: 21,
+              width: 332,
+              child: TextFormField(
+                controller: _emailController,
+                decoration: const InputDecoration(
+                  border: InputBorder.none,
+                  hintText: 'Email',
+                ),
+                style: const TextStyle(
+                  fontSize: 14,
+                  color: Colors.black,
+                ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter your email';
+                  }
+                  if (value != 'ekfbryntikh@gmail.com') {
+                    return 'Invalid email address';
+                  }
+                  return null;
+                },
+              ),
+            ),
+            Positioned(
+              top: 442,
+              left: 21,
+              width: 332,
+              child: TextFormField(
+                controller: _passwordController,
+                obscureText: _obscurePassword,
+                decoration: const InputDecoration(
+                  border: InputBorder.none,
+                  hintText: 'Password',
+                ),
+                style: const TextStyle(
+                  fontSize: 14,
+                  color: Colors.black,
+                ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter your password';
+                  }
+                  if (value != 'password123') {
+                    return 'Invalid password';
+                  }
+                  return null;
+                },
+              ),
+            ),
+            Positioned(
+              top: 440,
+              left: 312,
+              child: IconButton(
+                icon: Icon(_obscurePassword ? Icons.visibility : Icons.visibility_off),
+                onPressed: () => setState(() => _obscurePassword = !_obscurePassword),
+                iconSize: 25,
+              ),
+            ),
+            Positioned(
+              top: 480,
+              left: 21,
+              child: Container(
+                width: 332.5,
+                height: 0,
+                decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(
+                      width: 2,
+                      color: const Color(0xFFB74848),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 547,
+              left: 21,
+              child: ElevatedButton(
+                onPressed: _login,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFAF1116),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  minimumSize: const Size(332, 37),
+                ),
+                child: Text(
+                  'Login',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 14,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 606,
+              left: 0,
+              right: 0,
+              child: GestureDetector(
+                onTap: () => showModalBottomSheet(
+                  context: context,
+                  isScrollControlled: true,
+                  builder: (context) => const SizedBox(
+                    height: 400,
+                    child: HelpBottomSheet(),
+                  ),
+                ),
+                child: Center(
+                  child: Text(
+                    'Bantuan ?',
+                    style: const TextStyle(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 13,
+                      color: Color(0xFFAF1116),
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 650,
+              left: 0,
+              right: 0,
+              height: 200,
+              child: CustomPaint(
+                painter: WavePainter(),
+                size: const Size(double.infinity, 200),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
