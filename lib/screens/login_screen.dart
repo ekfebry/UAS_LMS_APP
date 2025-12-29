@@ -3,8 +3,16 @@ import 'package:google_fonts/google_fonts.dart';
 import 'home_screen.dart';
 import '../widgets/help_bottom_sheet.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+class DiagonalClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    Path path = Path();
+    path.lineTo(0, size.height);
+    path.lineTo(size.width, size.height  * 0.80);
+    path.lineTo(size.width, 0);
+    path.close();
+    return path;
+  }
 
   @override
   Widget build(BuildContext context) {
