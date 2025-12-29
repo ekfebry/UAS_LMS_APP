@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import '../widgets/home_tab.dart';
+import '../widgets/classes_tab.dart';
+import '../widgets/profile_tab.dart';
+import '../widgets/notifications_tab.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
