@@ -14,7 +14,7 @@ class LeftSlideInPageRoute<T> extends PageRouteBuilder<T> {
           transitionDuration: const Duration(milliseconds: 300),
           reverseTransitionDuration: const Duration(milliseconds: 300),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
-            const Offset begin = Offset(1.0, 0.0); // Slide in from right
+            const Offset begin = Offset(1.0, 0.0); 
             const Offset end = Offset.zero;
             
             final Animation<Offset> slideAnimation = Tween<Offset>(
@@ -22,7 +22,7 @@ class LeftSlideInPageRoute<T> extends PageRouteBuilder<T> {
               end: end,
             ).animate(CurvedAnimation(
               parent: animation,
-              curve: Curves.easeOut, // animation-timing-function: ease-out
+              curve: Curves.easeOut, 
             ));
 
             return SlideTransition(
@@ -48,3 +48,11 @@ class _HomeScreenState extends State<HomeScreen> {
       _selectedIndex = index;
     });
   }
+
+  @override
+  Widget build(BuildContext context) {
+    final List<Widget> _widgetOptions = <Widget>[
+      HomeTab(),
+      ClassesTab(onBack: () => _onItemTapped(0)),
+      NotificationsTab(onBack: () => _onItemTapped(0)),
+    ];
