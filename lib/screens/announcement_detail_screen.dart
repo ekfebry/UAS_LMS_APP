@@ -96,3 +96,23 @@ class AnnouncementDetailScreen extends StatelessWidget {
               ),
             ),
           ),
+          // Subtitle Text
+          Positioned(
+            top: 300, // 403 - 80
+            left: 134,
+            child: SizedBox(
+              width: 107,
+              height: 18,
+              child: Text(
+                'Maintenance LMS',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0.0,
+                  color: Colors.black,
+                  decoration: TextDecoration.none,
+                ),
+              ),
+            ),
+          ),
