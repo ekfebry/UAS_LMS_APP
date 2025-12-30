@@ -186,3 +186,23 @@ class ClassesTab extends StatelessWidget {
             child: const Icon(Icons.arrow_back, color: Colors.black, size: 30),
           ),
         ),
+        // Kelas Saya Text
+        Positioned(
+          top: 60,
+          left: 140,
+          child: SizedBox(
+            width: 120,
+            height: 27,
+            child: Text(
+              'Kelas Saya',
+              style: GoogleFonts.poppins(
+                fontWeight: FontWeight.w500,
+                fontSize: 18,
+                height: 1.0,
+                letterSpacing: 0.0,
+                color: Colors.black,
+                decoration: TextDecoration.none,
+              ),
+            ),
+          ),
+        ),
