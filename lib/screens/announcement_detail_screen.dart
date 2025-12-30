@@ -116,3 +116,25 @@ class AnnouncementDetailScreen extends StatelessWidget {
               ),
             ),
           ),
+          // Description Text
+          Positioned(
+            top: 340, // 442 - 80
+            left: 25,
+            child: SizedBox(
+              width: 341,
+              height: 238,
+              child: Text(
+                'Diinformasikan kepada seluruh pengguna LMS, kami\ndari tim CeLOE akan melakukan maintenance pada tanggal 12\nJuni 2021, untuk meningkatkan layanan server dalam mengh-\nadapi ujian akhir semester (UAS).\n\nDengan adanya kegiatan maintenance tersebut maka\nsitus LMS (Ims.telkomuniversity.ac.id) tidak dapat diakses\nmulai pukul 00.00 s/d 06.00 WIB.\n\nDemikian informasi ini kami sampaikan, mohon maaf\natas ketidaknyamanannya.\n\nHormat Kami,\nCeLOE Telkom University',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w300,
+                  fontSize: 11,
+                  height: 1.0,
+                  letterSpacing: 0.0,
+                  color: Colors.black,
+                  decoration: TextDecoration.none,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
