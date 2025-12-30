@@ -301,3 +301,118 @@ class _QuizReviewScreenState extends State<QuizReviewScreen> {
               ),
             ),
           ),
+          // Rectangle button
+          Positioned(
+            top: 609,
+            left: 123,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => const QuizPageScreen(),
+                    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                      const begin = Offset(1.0, 0.0);
+                      const end = Offset.zero;
+                      const curve = Curves.easeOut;
+                      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                      var offsetAnimation = animation.drive(tween);
+                      return SlideTransition(
+                        position: offsetAnimation,
+                        child: child,
+                      );
+                    },
+                    transitionDuration: const Duration(milliseconds: 300),
+                  ),
+                );
+              },
+              child: Container(
+                width: 129,
+                height: 31,
+                decoration: BoxDecoration(
+                  color: const Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          // Text "Ambil Kuis"
+          Positioned(
+            top: 617,
+            left: 162,
+            child: SizedBox(
+              width: 52,
+              height: 15,
+              child: Text(
+                'Ambil Kuis',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 10,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: const Color(0xFF030303),
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          // Second rectangle button
+          Positioned(
+            top: 650,
+            left: 123,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => const ClassDashboardScreen(),
+                    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                      const begin = Offset(-1.0, 0.0);
+                      const end = Offset.zero;
+                      const curve = Curves.easeOut;
+                      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                      var offsetAnimation = animation.drive(tween);
+                      return SlideTransition(
+                        position: offsetAnimation,
+                        child: child,
+                      );
+                    },
+                    transitionDuration: const Duration(milliseconds: 300),
+                  ),
+                );
+              },
+              child: Container(
+                width: 129,
+                height: 31,
+                decoration: BoxDecoration(
+                  color: const Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          // Text "Kembali Ke Kelas"
+          Positioned(
+            top: 658,
+            left: 140,
+            child: SizedBox(
+              width: 100,
+              height: 15,
+              child: Text(
+                'Kembali Ke Kelas',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 10,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: const Color(0xFF030303),
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+        ],
+         ),
+       ),
+     ),
+   );
+ }
+}
