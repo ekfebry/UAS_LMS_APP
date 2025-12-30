@@ -683,3 +683,25 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     color: const Color(0xFFF7F7F7),
                     borderRadius: BorderRadius.circular(10),
                   ),
+                  child: Center(
+                    child: Text(
+                      'Simpan',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 9,
+                        height: 1.0,
+                        letterSpacing: 0.0,
+                        color: Colors.black,
+                        decoration: TextDecoration.none,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        );
+      default:
+        return Container();
+    }
+  }
