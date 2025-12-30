@@ -87,5 +87,25 @@ class NotificationsTab extends StatelessWidget {
                   ),
                 ),
               ),
+              // Time Text
+              Positioned(
+                top: 70, // 181 - 100
+                left: 36,
+                child: SizedBox(
+                  width: 104,
+                  height: 14,
+                  child: Text(
+                    '3 Hari 9 Jam Yang Lalu',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 9,
+                      height: 1.0,
+                      letterSpacing: 0.0,
+                      color: const Color(0x80000000), // 50% opacity black
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                ),
+              ),
 
 }
