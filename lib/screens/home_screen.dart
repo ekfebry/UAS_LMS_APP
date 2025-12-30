@@ -174,3 +174,106 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
+              child: Stack(
+                children: [
+                  // Home Icon
+                  Positioned(
+                    top: 8,
+                    left: 40,
+                    child: GestureDetector(
+                      onTap: () => _onItemTapped(0),
+                      child: Icon(
+                        Icons.home,
+                        color: _selectedIndex == 0 ? Colors.white : Colors.white70,
+                        size: 27.944664001464844,
+                      ),
+                    ),
+                  ),
+                  // Home Text
+                  Positioned(
+                    top: 35,
+                    left: 40,
+                    child: GestureDetector(
+                      onTap: () => _onItemTapped(0),
+                      child: Text(
+                        'Home',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 10,
+                          color: _selectedIndex == 0 ? Colors.white : Colors.white70,
+                          height: 1.0,
+                          letterSpacing: 0,
+                        ),
+                      ),
+                    ),
+                  ),
+                  // Classes Icon
+                  Positioned(
+                    top: 6,
+                    left: 165,
+                    child: GestureDetector(
+                      onTap: () => _onItemTapped(1),
+                      child: Icon(
+                        Icons.school,
+                        color: _selectedIndex == 1 ? Colors.white : Colors.white70,
+                        size: 30.944664001464844,
+                      ),
+                    ),
+                  ),
+                  // Classes Text
+                  Positioned(
+                    top: 35,
+                    left: 158,
+                    child: GestureDetector(
+                      onTap: () => _onItemTapped(1),
+                      child: Text(
+                        'Kelas Saya',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 10,
+                          color: _selectedIndex == 1 ? Colors.white : Colors.white70,
+                          height: 1.0,
+                          letterSpacing: 0,
+                        ),
+                      ),
+                    ),
+                  ),
+                  // Notifications Icon
+                  Positioned(
+                    top: 6,
+                    left: 292,
+                    child: GestureDetector(
+                      onTap: () => _onItemTapped(2),
+                      child: Icon(
+                        Icons.notifications,
+                        color: _selectedIndex == 2 ? Colors.white : Colors.white70,
+                        size: 27.944664001464844,
+                      ),
+                    ),
+                  ),
+                  // Notifications Text
+                  Positioned(
+                    top: 35,
+                    left: 286,
+                    child: GestureDetector(
+                      onTap: () => _onItemTapped(2),
+                      child: Text(
+                        'Notifikasi',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 10,
+                          color: _selectedIndex == 2 ? Colors.white : Colors.white70,
+                          height: 1.0,
+                          letterSpacing: 0,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
