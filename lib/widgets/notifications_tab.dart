@@ -67,5 +67,25 @@ class NotificationsTab extends StatelessWidget {
                   height: 18,
                 ),
               ),
+              // Notification Text
+              Positioned(
+                top: 45,
+                left: 36,
+                child: SizedBox(
+                  width: 324,
+                  height: 30,
+                  child: Text(
+                    'Anda telah mengirimkan pengajuan tugas untuk Pengumpulan\nLaporan Akhir Assessment 3 (Tugas Besar)',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 10,
+                      height: 1.0,
+                      letterSpacing: 0.0,
+                      color: Colors.black,
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                ),
+              ),
 
 }
