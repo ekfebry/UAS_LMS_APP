@@ -499,3 +499,211 @@ class _QuizPage2ScreenState extends State<QuizPage2Screen> {
               ),
             ),
           ),
+          Positioned(
+            top: 75,
+            left: 14,
+            child: SizedBox(
+              width: 117,
+              height: 20,
+              child: Text(
+                'Soal Nomor 2 / 15',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w600,
+                  fontSize: 13,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 180,
+            left: 24,
+            child: SizedBox(
+              width: 338,
+              height: 60,
+              child: Text(
+                'Dalam perancangan web yang baik, untuk teks yang menyampaikan isi konten digunakan font yang sama di setiap halaman, ini merupakan salah satu tujuan yaitu ?',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 13,
+                  height: 1.5,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 300,
+            left: 41,
+            child: GestureDetector(
+              onTap: () => setState(() => _selectedOption = _selectedOption == 1 ? 0 : 1),
+              child: Container(
+                width: 294,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: _selectedOption == 1 ? const Color(0xFFEA6262) : const Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 315,
+            left: 50,
+            child: SizedBox(
+              width: 100,
+              height: 15,
+              child: Text(
+                'A. Integrasi',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 352,
+            left: 41,
+            child: GestureDetector(
+              onTap: () => setState(() => _selectedOption = _selectedOption == 2 ? 0 : 2),
+              child: Container(
+                width: 294,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: _selectedOption == 2 ? const Color(0xFFEA6262) : const Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 366,
+            left: 50,
+            child: SizedBox(
+              width: 120,
+              height: 15,
+              child: Text(
+                'B. Standarisasi',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 404,
+            left: 41,
+            child: GestureDetector(
+              onTap: () => setState(() => _selectedOption = _selectedOption == 3 ? 0 : 3),
+              child: Container(
+                width: 294,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: _selectedOption == 3 ? const Color(0xFFEA6262) : const Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 418,
+            left: 50,
+            child: SizedBox(
+              width: 80,
+              height: 15,
+              child: Text(
+                'C. Konsistensi',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 456,
+            left: 41,
+            child: GestureDetector(
+              onTap: () => setState(() => _selectedOption = _selectedOption == 4 ? 0 : 4),
+              child: Container(
+                width: 294,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: _selectedOption == 4 ? const Color(0xFFEA6262) : const Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 470,
+            left: 50,
+            child: SizedBox(
+              width: 60,
+              height: 15,
+              child: Text(
+                'D. Koefensi',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 508,
+            left: 41,
+            child: GestureDetector(
+              onTap: () => setState(() => _selectedOption = _selectedOption == 5 ? 0 : 5),
+              child: Container(
+                width: 294,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: _selectedOption == 5 ? const Color(0xFFEA6262) : const Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 522,
+            left: 50,
+            child: SizedBox(
+              width: 80,
+              height: 15,
+              child: Text(
+                'E. Koreksi',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
