@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'assignment_detail_screen.dart';
+import 'material_detail_screen.dart';
+import 'video_player_screen.dart';
+import 'quiz_review_screen.dart';
 
 class ClassDashboardScreen extends StatelessWidget {
   const ClassDashboardScreen({super.key});
