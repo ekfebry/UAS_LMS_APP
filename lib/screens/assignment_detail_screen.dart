@@ -122,3 +122,39 @@ class _AssignmentDetailScreenState extends State<AssignmentDetailScreen> {
                   ],
                 ),
               ),
+
+              const SizedBox(height: 30),
+              SizedBox(
+                height: 50,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 0,
+                      left: 0,
+                      child: Text(
+                        'Status Nilai',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 13,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: 0,
+                      left: 120,
+                      child: SizedBox(
+                        width: 100,
+                        height: 14,
+                        child: Text(
+                          'Belum Di nilai',
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
+                            color: const Color(0xFF000000),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
