@@ -141,3 +141,27 @@ class ClassDashboardScreen extends StatefulWidget {
   @override
   State<ClassDashboardScreen> createState() => _ClassDashboardScreenState();
 }
+
+class _ClassDashboardScreenState extends State<ClassDashboardScreen> {
+  int _selectedTabIndex = 0;
+
+  Widget getContent(int index) {
+    switch (index) {
+      case 0:
+        return SingleChildScrollView(
+          padding: const EdgeInsets.only(bottom: 80),
+          child: SizedBox(
+            height: 900,
+            child: Stack(
+              children: [
+                Positioned(
+                  top: 31,
+                  left: 21,
+                  child: GestureDetector(
+                    onTap: () {
+                      showModalBottomSheet(
+                        context: context,
+                        isScrollControlled: true,
+                        builder: (context) => const MaterialBottomSheetWithTabs(meetingId: 6),
+                      );
+                    },
