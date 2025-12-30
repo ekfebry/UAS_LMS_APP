@@ -49,5 +49,23 @@ class NotificationsTab extends StatelessWidget {
             ),
           ),
         ),
+        // Content below
+        Positioned(
+          top: 100,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          child: Stack(
+            children: [
+              // Laporan Image
+              Positioned(
+                top: 45, // 145 - 100
+                left: 14,
+                child: Image.asset(
+                  'assets/images/laporan.png',
+                  width: 20,
+                  height: 18,
+                ),
+              ),
 
 }
