@@ -16,3 +16,12 @@ class AnnouncementDetailScreen extends StatelessWidget {
           icon: const Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () => Navigator.of(context).pop(),
         ),
+        title: Text(
+          'Pengumuman',
+          style: GoogleFonts.poppins(
+            fontWeight: FontWeight.w500,
+            fontSize: 18,
+            color: Colors.black,
+          ),
+        ),
+      ),
