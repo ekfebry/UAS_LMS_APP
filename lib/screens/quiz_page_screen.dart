@@ -8,3 +8,34 @@ class QuizPageScreen extends StatefulWidget {
   @override
   State<QuizPageScreen> createState() => _QuizPageScreenState();
 }
+
+class _QuizPageScreenState extends State<QuizPageScreen> {
+  int _selectedOption = 0; // 0: none, 1: A, 2: B
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color(0xFFB74848),
+        elevation: 0,
+        toolbarHeight: 100,
+        automaticallyImplyLeading: false,
+        flexibleSpace: Stack(
+          children: [
+            // Title
+            Positioned(
+              top: 68,
+              left: 0,
+              right: 0,
+              child: Text(
+                'Quiz Review 1',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w600,
+                  fontSize: 14,
+                  color: Colors.white,
+                  height: 1.0,
+                  letterSpacing: 0,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
