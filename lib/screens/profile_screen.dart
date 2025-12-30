@@ -125,3 +125,23 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           ),
                         ),
                       ),
+                      const SizedBox(height: 2),
+                      SizedBox(
+                        height: 14,
+                        child: Text(
+                          'Tanggal Mulai Monday, 8 February 2021',
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w400,
+                            fontSize: 9,
+                            height: 1.0,
+                            letterSpacing: 0.0,
+                            color: const Color(0x80000000),
+                            decoration: TextDecoration.none,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
