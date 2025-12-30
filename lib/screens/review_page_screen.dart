@@ -67,3 +67,242 @@ class _ReviewPageScreenState extends State<ReviewPageScreen> {
               ),
             ),
           ),
+          Positioned(
+            top: 35,
+            left: 200,
+            child: SizedBox(
+              width: 126,
+              height: 14,
+              child: Text(
+                'Kamis 25 Februari 2021 10:25',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 50,
+            left: 54,
+            child: SizedBox(
+              width: 29,
+              height: 14,
+              child: Text(
+                'Status',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 50,
+            left: 200,
+            child: SizedBox(
+              width: 32,
+              height: 14,
+              child: Text(
+                'Selesai',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 65,
+            left: 54,
+            child: SizedBox(
+              width: 59,
+              height: 14,
+              child: Text(
+                'Selesai Pada',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 65,
+            left: 200,
+            child: SizedBox(
+              width: 126,
+              height: 14,
+              child: Text(
+                'Kamis 25 Februari 2021 10:40',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 80,
+            left: 54,
+            child: SizedBox(
+              width: 93,
+              height: 14,
+              child: Text(
+                'Waktu Penyelesaian',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 80,
+            left: 200,
+            child: SizedBox(
+              width: 73,
+              height: 14,
+              child: Text(
+                '13 Menit 22 Detik',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 95,
+            left: 54,
+            child: SizedBox(
+              width: 20,
+              height: 14,
+              child: Text(
+                'Nilai',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 95,
+            left: 200,
+            child: SizedBox(
+              width: 29,
+              height: 14,
+              child: Text(
+                '0 / 100',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 175,
+            left: 16,
+            child: SizedBox(
+              width: 59,
+              height: 14,
+              child: Text(
+                'Pertanyaan 1',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 172,
+            left: 93,
+            child: Container(
+              width: 252,
+              height: 16,
+              decoration: BoxDecoration(
+                color: const Color(0xFFC4C4C4),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 175,
+            left: 96,
+            child: SizedBox(
+              width: 234,
+              height: 14,
+              child: Text(
+                'Radio button dapat digunakan untuk menentukan ?',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 200,
+            left: 93,
+            child: SizedBox(
+              width: 94,
+              height: 28,
+              child: Text(
+                'Jawaban Tersimpan\nA. Jenis Kelamin',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
