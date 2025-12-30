@@ -165,3 +165,50 @@ class _ClassDashboardScreenState extends State<ClassDashboardScreen> {
                         builder: (context) => const MaterialBottomSheetWithTabs(meetingId: 6),
                       );
                     },
+                    child: Container(
+                      width: 332,
+                      height: 123,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(5),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.1),
+                            blurRadius: 4,
+                            offset: const Offset(0, 2),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 41,
+                  left: 35,
+                  child: Container(
+                    width: 92,
+                    height: 22,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF53A9E3),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 47,
+                  left: 50,
+                  child: SizedBox(
+                    width: 62,
+                    height: 15,
+                    child: Text(
+                      'Pertemuan 1',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 10,
+                        color: Colors.white,
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
