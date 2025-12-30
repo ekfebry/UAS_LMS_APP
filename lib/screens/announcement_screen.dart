@@ -46,3 +46,22 @@ class AnnouncementsScreen extends StatelessWidget {
                       height: 26,
                     ),
                   ),
+                  Positioned(
+                    top: 0,
+                    left: 58,
+                    child: SizedBox(
+                      width: 296,
+                      height: 18,
+                      child: Text(
+                        'Maintenance Pra UAS Semester Genap 2020/2021',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 12,
+                          height: 1.0,
+                          letterSpacing: 0.0,
+                          color: Colors.black,
+                          decoration: TextDecoration.none,
+                        ),
+                      ),
+                    ),
+                  ),
