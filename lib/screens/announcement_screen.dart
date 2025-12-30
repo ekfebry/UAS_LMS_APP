@@ -25,3 +25,24 @@ class AnnouncementsScreen extends StatelessWidget {
           ),
         ),
       ),
+      body: Stack(
+        children: [
+          // First Announcement
+          Positioned(
+            top: 30,
+            left: 0,
+            right: 0,
+            height: 50,
+            child: GestureDetector(
+              onTap: () => Navigator.pushNamed(context, '/announcement_detail'),
+              child: Stack(
+                children: [
+                  Positioned(
+                    top: 0,
+                    left: 21,
+                    child: Image.asset(
+                      'assets/images/pengumuman.png',
+                      width: 27,
+                      height: 26,
+                    ),
+                  ),
