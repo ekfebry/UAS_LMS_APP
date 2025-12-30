@@ -90,3 +90,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
           ],
         );
+        case 1:
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const SizedBox(height: 15),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  width: 64,
+                  height: 35,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF83B8DA),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
