@@ -39,3 +39,39 @@ class _QuizPageScreenState extends State<QuizPageScreen> {
                 textAlign: TextAlign.center,
               ),
             ),
+            // Clock image
+            Positioned(
+              top: 100,
+              left: 288,
+              child: SizedBox(
+                width: 25,
+                height: 21,
+                child: Image.asset(
+                  'assets/images/clock.png',
+                  fit: BoxFit.contain,
+                ),
+              ),
+            ),
+            // Timer text
+            Positioned(
+              top: 105,
+              left: 318,
+              child: SizedBox(
+                width: 43,
+                height: 21,
+                child: Text(
+                  '15 : 00',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 14,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
