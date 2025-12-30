@@ -1878,3 +1878,66 @@ class _MaterialBottomSheetWithTabsState extends State<MaterialBottomSheetWithTab
                 ),
               ),
             ),
+            // Fourth rectangle
+            Positioned(
+              top: 470,
+              left: 17,
+              child: Container(
+                width: 340,
+                height: 47,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0x40000000),
+                      offset: const Offset(1, 1),
+                      blurRadius: 5,
+                      spreadRadius: 0.5,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Positioned(
+              top: 485,
+              left: 33,
+              child: SizedBox(
+                width: 20,
+                height: 18,
+                child: Image.asset(
+                  'assets/images/laporan.png',
+                  fit: BoxFit.contain,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 488,
+              left: 57,
+              child: SizedBox(
+                width: 200,
+                height: 15,
+                child: Text(
+                  'User Profile',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 10,
+                    color: const Color(0xFF000000),
+                    height: 1.0,
+                    letterSpacing: 0.0,
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 486,
+              left: 328,
+              child: SizedBox(
+                width: 22,
+                height: 16,
+                child: Image.asset(
+                  'assets/images/green_tick.png',
+                  fit: BoxFit.contain,
+                ),
+              ),
+            ),
