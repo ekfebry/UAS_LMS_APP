@@ -666,3 +666,20 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
             ),
+            const SizedBox(height: 23),
+            Align(
+              alignment: Alignment.centerRight,
+              child: GestureDetector(
+                onTap: () {
+                  // Save logic here
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Profile saved')),
+                  );
+                },
+                child: Container(
+                  width: 97,
+                  height: 42,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFF7F7F7),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
