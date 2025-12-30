@@ -68,3 +68,22 @@ class SubjectCard extends StatelessWidget {
                 ),
               ),
             ),
+            // Subject Title Text
+            Positioned(
+              top: 14,
+              left: 122,
+              child: SizedBox(
+                width: 210,
+                height: 51,
+                child: Text(
+                  title,
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 11,
+                    color: const Color(0xFF000000),
+                    height: 1.0,
+                    letterSpacing: 0,
+                  ),
+                ),
+              ),
+            ),
