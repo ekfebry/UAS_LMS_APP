@@ -50,3 +50,56 @@ class _AssignmentDetailScreenState extends State<AssignmentDetailScreen> {
         ),
         centerTitle: true,
       ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '1. Buatlah desain tampilan (antarmuka) pada aplikasi mobile game FPS (First Person Shooter) yang akan menjadi tugas pada mata kuliah Pemrograman Aplikasi Permainan.\n\n2. Desain yang dibuat harus melingkupi seluruh tampilan pada aplikasi/game, dari pertama kali aplikasi dibuka sampai ditutup kembali, serta desain untuk tampilan-tampilan fungsi yang mendukung permainan seperti pop-up, alert, chat, dan lain-lain.\n\n3. Desain bisa dibuat menggunakan aplikasi khusus desain atau secara manual dengan tetap menjunjung kerapihan dan kejelasan setiap elemen dalam desain.\n\n4. Berikan identitas aplikasi game yang dibuat, seperti Nama Game, Genre, dan Platform. Serta berikan penjelasan pada setiap elemen pada desain, seperti gambar, teks, tombol, icon, dan lain-lain.\n\n5. File dikumpulkan dalam format .PDF dengan size maksimal 5MB.\n\n6. Tugas dikumpulkan paling lambat hari Jum\'at, 26 Februari 2021 jam 23:59 WIB (akan tertutup otomatis) dan akan dipresentasikan pada pertemuan selanjutnya via Zoom Meeting.',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w300,
+                  fontSize: 13,
+                  color: const Color(0xFF000000),
+                  height: 1.5,
+                ),
+              ),
+              const SizedBox(height: 25),
+
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                decoration: const BoxDecoration(
+                  color: Color(0xFFEA6262),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    topRight: Radius.circular(10),
+                  ),
+                ),
+                child: Text(
+                  'Status Tugas',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 13,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 10),
+              SizedBox(
+                height: 50,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 10,
+                      left: 0,
+                      child: Text(
+                        'Status',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 13,
+                        ),
+                      ),
+                    ),
