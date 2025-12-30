@@ -755,3 +755,81 @@ class _QuizPage3ScreenState extends State<QuizPage3Screen> {
               ),
             ),
           ),
+          Positioned(
+            top: 630,
+            left: 50,
+            child: SizedBox(
+              width: 83,
+              height: 14,
+              child: Text(
+                'Soal Sebelum nya.',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 616,
+            left: 238,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => ReviewPageScreen(),
+                    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                      return SlideTransition(
+                        position: Tween<Offset>(
+                          begin: const Offset(-1.0, 0.0),
+                          end: Offset.zero,
+                        ).animate(CurvedAnimation(
+                          parent: animation,
+                          curve: Curves.easeOut,
+                        )),
+                        child: child,
+                      );
+                    },
+                    transitionDuration: const Duration(milliseconds: 300),
+                  ),
+                );
+              },
+              child: Container(
+                width: 97,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF2BEE1A),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 630,
+            left: 270,
+            child: SizedBox(
+              width: 35,
+              height: 14,
+              child: Text(
+                'Selesai.',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
