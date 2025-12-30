@@ -155,3 +155,24 @@ class SubjectCard extends StatelessWidget {
     );
   }
 }
+
+class HomeTab extends StatelessWidget {
+  const HomeTab({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: const EdgeInsets.only(top: 1.0, left: 15.0, right: 16.0, bottom: 80.0),
+      children: [
+        // Tugas Yang Akan Datang Text
+        const SizedBox(height: 15),
+        Text(
+          'Tugas Yang Akan Datang',
+          style: GoogleFonts.poppins(
+            fontWeight: FontWeight.w500,
+            fontSize: 14,
+            color: const Color(0xFF000000),
+            height: 1.0,
+            letterSpacing: 0,
+          ),
+        ),
