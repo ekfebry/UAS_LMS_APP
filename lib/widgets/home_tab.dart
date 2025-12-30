@@ -284,3 +284,37 @@ class HomeTab extends StatelessWidget {
             ),
           ),
         ),
+        const SizedBox(height: 20),
+        // Pengumuman Terakhir Text
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Pengumuman Terakhir',
+              style: GoogleFonts.poppins(
+                fontWeight: FontWeight.w500,
+                fontSize: 14,
+                color: const Color(0xFF000000),
+                height: 1.0,
+                letterSpacing: 0,
+              ),
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                  LeftSlideInPageRoute(page: const AnnouncementsScreen()),
+                );
+              },
+              child: Text(
+                'Lihat Semua',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 10,
+                  color: const Color(0xFF0500FF),
+                  height: 1.0,
+                  letterSpacing: 0,
+                ),
+              ),
+            ),
+          ],
+        ),
