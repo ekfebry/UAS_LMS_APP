@@ -206,3 +206,13 @@ class ClassesTab extends StatelessWidget {
             ),
           ),
         ),
+        // Content below
+        Positioned(
+          top: 100,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          child: ListView(
+            padding: const EdgeInsets.only(top: 1.0, left: 15.0, right: 16.0, bottom: 80.0),
+            children: [
+              const SizedBox(height: 15),
