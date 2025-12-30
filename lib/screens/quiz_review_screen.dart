@@ -119,3 +119,108 @@ class _QuizReviewScreenState extends State<QuizReviewScreen> {
               ),
             ),
           ),
+          Positioned(
+            top: 385,
+            left: 12,
+            child: SizedBox(
+              width: 40,
+              child: Text(
+                'Status',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 11,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 385,
+            left: 215,
+            child: SizedBox(
+              width: 70,
+              child: Text(
+                'Nilai / 100.00',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 11,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 385,
+            left: 285,
+            child: SizedBox(
+              width: 100,
+              child: Text(
+                'Tinjau Kembali',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 11,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 409,
+            left: 0,
+            child: Container(
+              width: 400,
+              height: 70,
+              decoration: BoxDecoration(
+                color: const Color(0xFFF7F7F7),
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(10),
+                  topRight: Radius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 415,
+            left: 12,
+            child: SizedBox(
+              width: 43,
+              child: Text(
+                'Selesai',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 430,
+            left: 9,
+            child: SizedBox(
+              width: 200,
+              child: Text(
+                'Dikirim Pada Kamis, 25 Februari 2021, 10:40',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 10,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
