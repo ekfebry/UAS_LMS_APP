@@ -108,3 +108,27 @@ class SubjectCard extends StatelessWidget {
                 ),
               ),
             ),
+            // Progress Bar Fill
+            Positioned(
+              top: 84,
+              left: 143 + 197 - fillWidth,
+              child: Container(
+                width: fillWidth,
+                height: 10,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(20),
+                    bottomRight: Radius.circular(20),
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0x40000000),
+                      offset: const Offset(0, 4),
+                      blurRadius: 4,
+                      spreadRadius: 0,
+                    ),
+                  ],
+                ),
+              ),
+            ),
