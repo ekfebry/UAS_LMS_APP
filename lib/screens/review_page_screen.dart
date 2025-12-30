@@ -306,3 +306,45 @@ class _ReviewPageScreenState extends State<ReviewPageScreen> {
               ),
             ),
           ),
+          Positioned(
+            top: 200,
+            left: 316,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) => QuizReviewDetailScreen(),
+                    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                      return SlideTransition(
+                        position: Tween<Offset>(
+                          begin: const Offset(-1.0, 0.0),
+                          end: Offset.zero,
+                        ).animate(CurvedAnimation(
+                          parent: animation,
+                          curve: Curves.easeOut,
+                        )),
+                        child: child,
+                      );
+                    },
+                    transitionDuration: const Duration(milliseconds: 300),
+                  ),
+                );
+              },
+              child: SizedBox(
+                width: 44,
+                height: 14,
+                child: Text(
+                  'Lihat Soal',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: const Color(0xFF0500FF),
+                  ),
+                  textAlign: TextAlign.left,
+                ),
+              ),
+            ),
+          ),
