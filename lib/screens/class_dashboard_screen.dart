@@ -592,3 +592,103 @@ class _ClassDashboardScreenState extends State<ClassDashboardScreen> {
                     ),
                   ),
                 ),
+                // Fifth rectangle
+                Positioned(
+                  top: 627,
+                  left: 21,
+                  child: Container(
+                    width: 332,
+                    height: 123,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(5),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.1),
+                          blurRadius: 4,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 637,
+                  left: 35,
+                  child: Container(
+                    width: 92,
+                    height: 22,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF53A9E3),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 642,
+                  left: 50,
+                  child: SizedBox(
+                    width: 62,
+                    height: 15,
+                    child: Text(
+                      'Pertemuan 5',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 10,
+                        color: Colors.white,
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 636,
+                  left: 323,
+                  child: SizedBox(
+                    width: 22,
+                    height: 16,
+                    child: Image.asset(
+                      'assets/images/green_tick.png',
+                      width: 22,
+                      height: 16,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 677,
+                  left: 35,
+                  child: SizedBox(
+                    width: 320,
+                    height: 21,
+                    child: Text(
+                      '05 - UID Testing',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 14,
+                        color: const Color(0xFF000000),
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 722,
+                  left: 35,
+                  child: SizedBox(
+                    width: 173,
+                    height: 15,
+                    child: Text(
+                      '3 URLs, 2 Files, 3 Interactive Content',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w300,
+                        fontSize: 10,
+                        color: const Color(0x80000000),
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
