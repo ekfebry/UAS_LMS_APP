@@ -705,3 +705,35 @@ class _ProfileScreenState extends State<ProfileScreen> {
         return Container();
     }
   }
+
+  @override
+  Widget build(BuildContext context) {
+    void selectTab(int index) {
+      setState(() {
+        _selectedTabIndex = index;
+      });
+    }
+
+    // Calculate indicator position based on selected tab
+    double indicatorLeft = 77; 
+    if (_selectedTabIndex == 1) indicatorLeft = 177; 
+    if (_selectedTabIndex == 2) indicatorLeft = 277;
+
+    return Stack(
+      children: [
+        Scaffold(
+          appBar: AppBar(
+            backgroundColor: const Color(0xFFB74848),
+            elevation: 0,
+            toolbarHeight: 245,
+            automaticallyImplyLeading: false,
+            flexibleSpace: Stack(
+              children: [
+                Positioned(
+                  top: 36,
+                  left: 6,
+                  child: GestureDetector(
+                    onTap: () => Navigator.of(context).pop(),
+                    child: const Icon(Icons.arrow_back, color: Colors.white),
+                  ),
+                ),
