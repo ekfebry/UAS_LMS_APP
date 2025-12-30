@@ -793,3 +793,92 @@ class _ReviewPageScreenState extends State<ReviewPageScreen> {
               ),
             ),
           ),
+
+          // Pertanyaan 7
+          Positioned(
+            top: 740,
+            left: 16,
+            child: SizedBox(
+              width: 59,
+              height: 14,
+              child: Text(
+                'Pertanyaan 7',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 737,
+            left: 93,
+            child: Container(
+              width: 252,
+              height: 16,
+              decoration: BoxDecoration(
+                color: const Color(0xFFC4C4C4),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 740,
+            left: 96,
+            child: SizedBox(
+              width: 234,
+              height: 14,
+              child: Text(
+                'Radio button dapat digunakan untuk menentukan ?',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 765,
+            left: 93,
+            child: SizedBox(
+              width: 94,
+              height: 28,
+              child: Text(
+                'Jawaban Tersimpan\nA. Jenis Kelamin',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 765,
+            left: 316,
+            child: SizedBox(
+              width: 44,
+              height: 14,
+              child: Text(
+                'Lihat Soal',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: const Color(0xFF0500FF),
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
