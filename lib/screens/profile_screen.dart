@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package: google_fonts/google_fonts.dart';
+import '../widgets/profile_tab.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
