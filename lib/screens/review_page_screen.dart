@@ -526,6 +526,7 @@ class _ReviewPageScreenState extends State<ReviewPageScreen> {
               ),
             ),
           ),
+
           // Pertanyaan 4
           Positioned(
             top: 460,
@@ -686,6 +687,95 @@ class _ReviewPageScreenState extends State<ReviewPageScreen> {
           ),
           Positioned(
             top: 595,
+            left: 316,
+            child: SizedBox(
+              width: 44,
+              height: 14,
+              child: Text(
+                'Lihat Soal',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: const Color(0xFF0500FF),
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+
+          // Pertanyaan 6
+          Positioned(
+            top: 635,
+            left: 16,
+            child: SizedBox(
+              width: 59,
+              height: 14,
+              child: Text(
+                'Pertanyaan 6',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 632,
+            left: 93,
+            child: Container(
+              width: 252,
+              height: 57,
+              decoration: BoxDecoration(
+                color: const Color(0xFFC4C4C4),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 637,
+            left: 96,
+            child: SizedBox(
+              width: 234,
+              height: 50,
+              child: Text(
+                'Dalam perancangan web yang baik, untuk teks yang menyampaikan isi konten digunakan font yang sama di setiap halaman, ini merupakan salah satu tujuan yaitu ?',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 9,
+                  height: 1.5,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 700,
+            left: 93,
+            child: SizedBox(
+              width: 94,
+              height: 28,
+              child: Text(
+                'Jawaban Tersimpan\nC. Konsistensi',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 700,
             left: 316,
             child: SizedBox(
               width: 44,
