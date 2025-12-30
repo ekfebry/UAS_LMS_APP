@@ -2168,3 +2168,242 @@ class _MaterialBottomSheetWithTabsState extends State<MaterialBottomSheetWithTab
                   ),
                 ),
               ),
+              // Vertical line
+              Positioned(
+                top: 314,
+                left: 46,
+                child: Container(
+                  width: 0,
+                  height: 102,
+                  decoration: const BoxDecoration(
+                    border: Border(
+                      left: BorderSide(
+                        color: Color(0x80000000),
+                        width: 1,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              // Horizontal line
+              Positioned(
+                top: 339,
+                left: 46,
+                child: Container(
+                  width: 307,
+                  height: 0,
+                  decoration: const BoxDecoration(
+                    border: Border(
+                      top: BorderSide(
+                        color: Color(0x80000000),
+                        width: 1,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              // Text "Kuis - Assessment 2"
+              Positioned(
+                top: 321,
+                left: 56,
+                child: SizedBox(
+                  width: 120,
+                  height: 15,
+                  child: Text(
+                    'Kuis - Assessment 2',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 10,
+                      color: const Color(0xFF000000),
+                      height: 1.0,
+                      letterSpacing: 0,
+                    ),
+                  ),
+                ),
+              ),
+              // Image quiz.png
+              Positioned(
+                top: 358,
+                left: 21,
+                child: SizedBox(
+                  width: 20,
+                  height: 18,
+                  child: Image.asset(
+                    'assets/images/quiz.png',
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+              // Image green_tick.png
+              Positioned(
+                top: 318,
+                left: 322,
+                child: SizedBox(
+                  width: 22,
+                  height: 16,
+                  child: Image.asset(
+                    'assets/images/green_tick.png',
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+              // Long text
+              Positioned(
+                top: 348,
+                left: 56,
+                child: SizedBox(
+                  width: 295,
+                  height: 56,
+                  child: Text(
+                    'Silahkan kerjakan kuis Assessment 2 dalam waktu 30 menit. Jangan lupa klik tombol Submit Answer setelah menjawab seluruh pertanyaan.',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 9,
+                      color: const Color(0xFF000000),
+                      height: 1.5,
+                      letterSpacing: 0,
+                    ),
+                  ),
+                ),
+              ),
+            ] else if (widget.meetingId == 5) ...[
+              // New rectangle for meeting 5
+              Positioned(
+                top: 314,
+                left: 13,
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) => const QuizReviewScreen(),
+                        transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                          const begin = Offset(1.0, 0.0);
+                          const end = Offset.zero;
+                          const curve = Curves.easeOut;
+                          var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                          var offsetAnimation = animation.drive(tween);
+                          return SlideTransition(
+                            position: offsetAnimation,
+                            child: child,
+                          );
+                        },
+                        transitionDuration: const Duration(milliseconds: 300),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    width: 340,
+                    height: 102,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0x40000000),
+                          offset: const Offset(1, 1),
+                          blurRadius: 5,
+                          spreadRadius: 0.5,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              // Vertical line
+              Positioned(
+                top: 314,
+                left: 46,
+                child: Container(
+                  width: 0,
+                  height: 102,
+                  decoration: const BoxDecoration(
+                    border: Border(
+                      left: BorderSide(
+                        color: Color(0x80000000),
+                        width: 1,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              // Horizontal line
+              Positioned(
+                top: 339,
+                left: 46,
+                child: Container(
+                  width: 307,
+                  height: 0,
+                  decoration: const BoxDecoration(
+                    border: Border(
+                      top: BorderSide(
+                        color: Color(0x80000000),
+                        width: 1,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              // Text "Quiz Review 01"
+              Positioned(
+                top: 321,
+                left: 56,
+                child: SizedBox(
+                  width: 71,
+                  height: 15,
+                  child: Text(
+                    'Quiz Review 01',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 10,
+                      color: const Color(0xFF000000),
+                      height: 1.0,
+                      letterSpacing: 0,
+                    ),
+                  ),
+                ),
+              ),
+              // Image quiz.png
+              Positioned(
+                top: 358,
+                left: 21,
+                child: SizedBox(
+                  width: 20,
+                  height: 18,
+                  child: Image.asset(
+                    'assets/images/quiz.png',
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+              // Image green_tick.png
+              Positioned(
+                top: 318,
+                left: 322,
+                child: SizedBox(
+                  width: 22,
+                  height: 16,
+                  child: Image.asset(
+                    'assets/images/green_tick.png',
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+              // Long text
+              Positioned(
+                top: 348,
+                left: 56,
+                child: SizedBox(
+                  width: 295,
+                  height: 56,
+                  child: Text(
+                    'Silahkan kerjakan kuis ini dalam waktu 15 menit sebagai nilai pertama komponen kuis. Jangan lupa klik tombol Submit Answer setelah menjawab seluruh pertanyaan. Kerjakan sebelum hari Jum\'at, 26 Februari 2021 jam 23:59 WIB.',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 9,
+                      color: const Color(0xFF000000),
+                      height: 1.5,
+                      letterSpacing: 0,
+                    ),
+                  ),
+                ),
+              ),
