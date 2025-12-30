@@ -55,3 +55,67 @@ class _QuizReviewScreenState extends State<QuizReviewScreen> {
               ),
             ),
           ),
+          Positioned(
+            top: 175,
+            left: 38,
+            child: Container(
+              width: 294,
+              height: 109,
+              decoration: BoxDecoration(
+                color: const Color(0xFFF7F7F7),
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 190,
+            left: 42,
+            child: SizedBox(
+              width: 287,
+              height: 75,
+              child: Text(
+                'Kuis Akan di tutup pada Jumat, 26 February 2021, 11:59 PM\n\nBatas Waktu: 15 menit\n\nMetode Penilaian: Nilai Tertinggi',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 13,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 345,
+            left: 18,
+            child: SizedBox(
+              width: 250,
+              child: Text(
+                'Percobaan Yang Sudah Di Lakukan',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 13,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 370,
+            left: 0,
+            child: Container(
+              width: 385,
+              height: 30,
+              decoration: BoxDecoration(
+                color: const Color(0xFFEA6262),
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(10),
+                  topRight: Radius.circular(10),
+                ),
+              ),
+            ),
+          ),
