@@ -4,3 +4,21 @@ import '../screens/assignment_detail_screen.dart';
 import '../screens/announcements_screen.dart';
 import '../screens/class_dashboard_screen.dart';
 import '../screens/home_screen.dart'; 
+
+class SubjectCard extends StatelessWidget {
+  final String imagePath;
+  final String date;
+  final String title;
+  final double progress;
+  final String progressText;
+  final double fillWidth;
+
+  const SubjectCard({
+    super.key,
+    required this.imagePath,
+    required this.date,
+    required this.title,
+    required this.progress,
+    required this.progressText,
+    required this.fillWidth,
+  });
