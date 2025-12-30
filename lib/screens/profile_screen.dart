@@ -72,3 +72,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
             ),
+            const SizedBox(height: 5),
+            SizedBox(
+              width: 250,
+              height: 162,
+              child: Text(
+                'First access to site Monday, 7 September 2020, 9:27 AM  (288 days 12 hours)\n\nLast access to site Tuesday, 22 June 2021, 9:44 PM  (now)',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0.0,
+                  color: Colors.black,
+                  decoration: TextDecoration.none,
+                ),
+              ),
+            ),
+          ],
+        );
