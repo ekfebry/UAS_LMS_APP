@@ -50,6 +50,90 @@ class SubjectCard extends StatelessWidget {
                 child: Image.asset(imagePath, fit: BoxFit.cover),
               ),
             ),
+            // Date Text
+            Positioned(
+              top: 0,
+              left: 122,
+              child: SizedBox(
+                width: 29,
+                height: 14,
+                child: Text(
+                  date,
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 9,
+                    color: const Color(0xFF000000),
+                    height: 1.0,
+                    letterSpacing: 0,
+                  ),
+                ),
+              ),
+            ),
+            // Subject Title Text
+            Positioned(
+              top: 14,
+              left: 122,
+              child: SizedBox(
+                width: 210,
+                height: 51,
+                child: Text(
+                  title,
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 11,
+                    color: const Color(0xFF000000),
+                    height: 1.0,
+                    letterSpacing: 0,
+                  ),
+                ),
+              ),
+            ),
+            // Progress Bar Background
+            Positioned(
+              top: 84,
+              left: 120,
+              child: Container(
+                width: 220,
+                height: 10,
+                decoration: BoxDecoration(
+                  color: const Color(0xFFAF1116),
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0x40000000),
+                      offset: const Offset(0, 4),
+                      blurRadius: 4,
+                      spreadRadius: 0,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            // Progress Text
+            Positioned(
+              top: 98,
+              left: 122,
+              child: SizedBox(
+                width: 55,
+                height: 14,
+                child: Text(
+                  progressText,
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 9,
+                    color: const Color(0xFF000000),
+                    height: 1.0,
+                    letterSpacing: 0,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
 
 class ClassDashboardScreen extends StatelessWidget {
   const ClassDashboardScreen({super.key});
