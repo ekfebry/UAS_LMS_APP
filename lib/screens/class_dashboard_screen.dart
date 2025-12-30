@@ -135,20 +135,9 @@ class SubjectCard extends StatelessWidget {
   }
 }
 
-class ClassDashboardScreen extends StatelessWidget {
+class ClassDashboardScreen extends StatefulWidget {
   const ClassDashboardScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Class Dashboard'),
-        backgroundColor: const Color(0xFFB74848),
-        foregroundColor: Colors.white,
-      ),
-      body: const Center(
-        child: Text('Class Dashboard Screen'),
-      ),
-    );
-  }
+  State<ClassDashboardScreen> createState() => _ClassDashboardScreenState();
 }
