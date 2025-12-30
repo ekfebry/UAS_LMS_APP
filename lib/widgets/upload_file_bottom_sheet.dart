@@ -67,3 +67,42 @@ class _UploadFileBottomSheetState extends State<UploadFileBottomSheet> {
             'Maksimum File 5MB , Maksimum Jumlah File 20',
             style: GoogleFonts.poppins(fontSize: 12),
           ),
+
+          const SizedBox(height: 20),
+
+          // AREA PREVIEW / DROP
+          Container(
+            width: double.infinity,
+            height: 180,
+            margin: const EdgeInsets.symmetric(horizontal: 20),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: Colors.black87),
+            ),
+            child: pickedFiles.isEmpty
+                ? Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Icon(Icons.cloud_upload,
+                          size: 80, color: Colors.blue),
+                      Text(
+                        'File yang akan di upload akan tampil di sini',
+                        style: GoogleFonts.poppins(fontSize: 12),
+                      )
+                    ],
+                  )
+                : ListView.builder(
+                    itemCount: pickedFiles.length,
+                    itemBuilder: (context, index) => ListTile(
+                      leading: const Icon(Icons.insert_drive_file),
+                      title: Text(pickedFiles[index].name),
+                      trailing: IconButton(
+                        icon: const Icon(Icons.delete),
+                        onPressed: () {
+                          setState(() => pickedFiles.removeAt(index));
+                        },
+                      ),
+                    ),
+                  ),
+          ),
