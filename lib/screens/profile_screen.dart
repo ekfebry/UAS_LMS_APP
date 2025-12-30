@@ -906,3 +906,131 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
           ),
         ),
+        Positioned(
+          bottom: 0,
+          left: 0,
+          right: 0,
+          child: Container(
+            width: 375,
+            height: 56,
+            decoration: BoxDecoration(
+              color: const Color(0xFFB74848),
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(40),
+                topRight: Radius.circular(40),
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0x40000000),
+                  offset: const Offset(0, 4),
+                  blurRadius: 4,
+                  spreadRadius: 0,
+                ),
+              ],
+            ),
+            child: Stack(
+              children: [
+                // Home Icon
+                Positioned(
+                  top: 8,
+                  left: 40,
+                  child: GestureDetector(
+                    onTap: () => Navigator.of(context).pushNamed('/home'),
+                    child: const Icon(
+                      Icons.home,
+                      color: Colors.white,
+                      size: 27.944664001464844,
+                    ),
+                  ),
+                ),
+                // Home Text
+                Positioned(
+                  top: 35,
+                  left: 40,
+                  child: GestureDetector(
+                    onTap: () => Navigator.of(context).pushNamed('/home'),
+                    child: Text(
+                      'Home',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 10,
+                        color: Colors.white,
+                        height: 1.0,
+                        letterSpacing: 0,
+                        decoration: TextDecoration.none,
+                      ),
+                    ),
+                  ),
+                ),
+                // Classes Icon
+                Positioned(
+                  top: 6,
+                  left: 165,
+                  child: GestureDetector(
+                    onTap: () => Navigator.of(context).pushNamed('/class_dashboard'),
+                    child: const Icon(
+                      Icons.school,
+                      color: Colors.white,
+                      size: 30.944664001464844,
+                    ),
+                  ),
+                ),
+                // Classes Text
+                Positioned(
+                  top: 35,
+                  left: 158,
+                  child: GestureDetector(
+                    onTap: () => Navigator.of(context).pushNamed('/class_dashboard'),
+                    child: Text(
+                      'Kelas Saya',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 10,
+                        color: Colors.white,
+                        height: 1.0,
+                        letterSpacing: 0,
+                        decoration: TextDecoration.none,
+                      ),
+                    ),
+                  ),
+                ),
+                // Notifications Icon
+                Positioned(
+                  top: 6,
+                  left: 292,
+                  child: GestureDetector(
+                    onTap: () => Navigator.of(context).pushNamed('/announcements'),
+                    child: const Icon(
+                      Icons.notifications,
+                      color: Colors.white,
+                      size: 27.944664001464844,
+                    ),
+                  ),
+                ),
+                // Notifications Text
+                Positioned(
+                  top: 35,
+                  left: 286,
+                  child: GestureDetector(
+                    onTap: () => Navigator.of(context).pushNamed('/announcements'),
+                    child: Text(
+                      'Notifikasi',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 10,
+                        color: Colors.white,
+                        height: 1.0,
+                        letterSpacing: 0,
+                        decoration: TextDecoration.none,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
