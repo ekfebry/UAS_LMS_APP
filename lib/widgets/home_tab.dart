@@ -187,3 +187,18 @@ class HomeTab extends StatelessWidget {
               ),
             );
           },
+          child: Container(
+            width: 334,
+            height: 157,
+            decoration: BoxDecoration(
+              color: const Color(0xFFAF1116),
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0x40000000),
+                  offset: const Offset(0, 4),
+                  blurRadius: 4,
+                  spreadRadius: 0,
+                ),
+              ],
+            ),
