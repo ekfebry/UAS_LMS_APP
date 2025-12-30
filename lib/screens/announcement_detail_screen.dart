@@ -8,13 +8,11 @@ class AnnouncementDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Announcement Detail'),
-        backgroundColor: const Color(0xFFB74848),
-        foregroundColor: Colors.white,
-      ),
-      body: const Center(
-        child: Text('Announcement Detail Screen'),
-      ),
-    );
-  }
-}
+       backgroundColor: Colors.white,
+        elevation: 0,
+        toolbarHeight: 80,
+        centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
