@@ -33,10 +33,10 @@ class LeftSlideInPageRoute<T> extends PageRouteBuilder<T> {
         );
 }
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
- @override
+  @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
