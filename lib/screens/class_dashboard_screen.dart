@@ -371,3 +371,124 @@ class _ClassDashboardScreenState extends State<ClassDashboardScreen> {
                     ),
                   ),
                 ),
+                // Third rectangle
+                Positioned(
+                  top: 329,
+                  left: 21,
+                  child: Container(
+                    width: 332,
+                    height: 123,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(5),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.1),
+                          blurRadius: 4,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 339,
+                  left: 35,
+                  child: Container(
+                    width: 92,
+                    height: 22,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF53A9E3),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 344,
+                  left: 50,
+                  child: SizedBox(
+                    width: 62,
+                    height: 15,
+                    child: Text(
+                      'Pertemuan 3',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 10,
+                        color: Colors.white,
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 338,
+                  left: 323,
+                  child: SizedBox(
+                    width: 22,
+                    height: 16,
+                    child: Image.asset(
+                      'assets/images/green_tick.png',
+                      width: 22,
+                      height: 16,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 388,
+                  left: 35,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        PageRouteBuilder(
+                          pageBuilder: (context, animation, secondaryAnimation) => const VideoPlayerScreen(),
+                          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                            const begin = Offset(1.0, 0.0);
+                            const end = Offset.zero;
+                            const curve = Curves.easeIn;
+                            var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                            var offsetAnimation = animation.drive(tween);
+                            return SlideTransition(
+                              position: offsetAnimation,
+                              child: child,
+                            );
+                          },
+                          transitionDuration: const Duration(milliseconds: 300),
+                        ),
+                      );
+                    },
+                    child: SizedBox(
+                      width: 320,
+                      height: 21,
+                      child: Text(
+                        '03 - Interaksi pada User Interface Design',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                          color: const Color(0xFF000000),
+                          height: 1.0,
+                          letterSpacing: 0,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 433,
+                  left: 35,
+                  child: SizedBox(
+                    width: 173,
+                    height: 15,
+                    child: Text(
+                      '3 URLs, 2 Files, 3 Interactive Content',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w300,
+                        fontSize: 10,
+                        color: const Color(0x80000000),
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
