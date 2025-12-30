@@ -231,3 +231,104 @@ class _AssignmentDetailScreenState extends State<AssignmentDetailScreen> {
                   ],
                 ),
               ),
+              const SizedBox(height: 35),
+              SizedBox(
+                height: uploadedFiles.isEmpty ? 20 : uploadedFiles.length * 20.0 + 10,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 0,
+                      left: 0,
+                      child: Text(
+                        'File Tugas',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 13,
+                          color: const Color(0xFF000000),
+                        ),
+                      ),
+                    ),
+                    ...uploadedFiles.asMap().entries.map((entry) {
+                      int index = entry.key;
+                      PlatformFile file = entry.value;
+                      return Positioned(
+                        top: index * 20.0,
+                        left: 120,
+                        child: SizedBox(
+                          width: 200,
+                          child: Row(
+                            children: [
+                              Icon(
+                                getFileIcon(file.name),
+                                size: 16,
+                                color: const Color(0xFF000000),
+                              ),
+                              const SizedBox(width: 4),
+                              Expanded(
+                                child: Text(
+                                  file.name,
+                                  style: GoogleFonts.poppins(
+                                    fontWeight: FontWeight.w300,
+                                    fontSize: 12,
+                                    color: const Color(0xFF000000),
+                                  ),
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    }),
+                  ],
+                ),
+              ),
+              Center(
+                child: GestureDetector(
+                  onTap: () async {
+                    final result = await showModalBottomSheet<List<PlatformFile>>(
+                      context: context,
+                      isScrollControlled: true,
+                      backgroundColor: Colors.transparent,
+                      builder: (context) => const UploadFileBottomSheet(),
+                    );
+                    if (result != null) {
+                      setState(() {
+                        uploadedFiles = result;
+                      });
+                    }
+                  },
+                  child: Container(
+                    width: 97,
+                    height: 42,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.1),
+                          blurRadius: 4,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Tambahkan Tugas',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 9,
+                          color: const Color(0xFF000000),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
