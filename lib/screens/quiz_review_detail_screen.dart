@@ -512,3 +512,211 @@ class _QuizReviewDetailScreenState extends State<QuizReviewDetailScreen> {
               ),
             ),
           ),
+          Positioned(
+            top: 75,
+            left: 14,
+            child: SizedBox(
+              width: 117,
+              height: 20,
+              child: Text(
+                'Soal Nomor 1 / 15',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w600,
+                  fontSize: 13,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 180,
+            left: 24,
+            child: SizedBox(
+              width: 338,
+              height: 20,
+              child: Text(
+                'Radio button dapat digunakan untuk menentukan ?',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 13,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 300,
+            left: 41,
+            child: GestureDetector(
+              onTap: () => setState(() => _selectedOption = _selectedOption == 1 ? 0 : 1),
+              child: Container(
+                width: 294,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: _selectedOption == 1 ? const Color(0xFFEA6262) : const Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 315,
+            left: 50,
+            child: SizedBox(
+              width: 100,
+              height: 15,
+              child: Text(
+                ' A. Jenis Kelamin',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 352,
+            left: 41,
+            child: GestureDetector(
+              onTap: () => setState(() => _selectedOption = _selectedOption == 2 ? 0 : 2),
+              child: Container(
+                width: 294,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: _selectedOption == 2 ? const Color(0xFFEA6262) : const Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 366,
+            left: 50,
+            child: SizedBox(
+              width: 80,
+              height: 15,
+              child: Text(
+                ' B. Alamat',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 404,
+            left: 41,
+            child: GestureDetector(
+              onTap: () => setState(() => _selectedOption = _selectedOption == 3 ? 0 : 3),
+              child: Container(
+                width: 294,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: _selectedOption == 3 ? const Color(0xFFEA6262) : const Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 418,
+            left: 50,
+            child: SizedBox(
+              width: 70,
+              height: 15,
+              child: Text(
+                ' C. Hobby',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 456,
+            left: 41,
+            child: GestureDetector(
+              onTap: () => setState(() => _selectedOption = _selectedOption == 4 ? 0 : 4),
+              child: Container(
+                width: 294,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: _selectedOption == 4 ? const Color(0xFFEA6262) : const Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 470,
+            left: 50,
+            child: SizedBox(
+              width: 130,
+              height: 15,
+              child: Text(
+                ' D. Riwayat Pendidikan',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 508,
+            left: 41,
+            child: GestureDetector(
+              onTap: () => setState(() => _selectedOption = _selectedOption == 5 ? 0 : 5),
+              child: Container(
+                width: 294,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: _selectedOption == 5 ? const Color(0xFFEA6262) : const Color(0xFFF7F7F7),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 522,
+            left: 50,
+            child: SizedBox(
+              width: 50,
+              height: 15,
+              child: Text(
+                ' E. Umur',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
