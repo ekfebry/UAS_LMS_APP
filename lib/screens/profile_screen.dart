@@ -56,3 +56,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
             ),
+            const SizedBox(height: 0),
+            SizedBox(
+              width: 130,
+              height: 20,
+              child: Text(
+                'Aktivitas Login',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 13,
+                  height: 1.0,
+                  letterSpacing: 0.0,
+                  color: Colors.black,
+                  decoration: TextDecoration.none,
+                ),
+              ),
+            ),
