@@ -39,3 +39,13 @@ class SubjectCard extends StatelessWidget {
         margin: const EdgeInsets.symmetric(vertical: 8.0),
         child: Stack(
           children: [
+            // Image
+            Positioned(
+              top: 0,
+              left: 0,
+              child: Container(
+                width: 106,
+                height: 140,
+                child: Image.asset(imagePath, fit: BoxFit.cover),
+              ),
+            ),
