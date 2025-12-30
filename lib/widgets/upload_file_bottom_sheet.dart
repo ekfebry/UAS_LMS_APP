@@ -106,3 +106,40 @@ class _UploadFileBottomSheetState extends State<UploadFileBottomSheet> {
                     ),
                   ),
           ),
+
+const SizedBox(height: 25),
+
+          ElevatedButton(
+            onPressed: pickFiles,
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.white,
+              foregroundColor: Colors.black,
+              minimumSize: const Size(140, 45),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: const Text('Pilih File'),
+          ),
+
+          const SizedBox(height: 15),
+
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context, pickedFiles);
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.white,
+              foregroundColor: Colors.black,
+              minimumSize: const Size(140, 45),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: const Text('Simpan'),
+          ),
+        ],
+      ),
+    );
+  }
+}
