@@ -103,3 +103,22 @@ class _AssignmentDetailScreenState extends State<AssignmentDetailScreen> {
                         ),
                       ),
                     ),
+                    Positioned(
+                      top: 10,
+                      left: 120,
+                      child: SizedBox(
+                        width: 200,
+                        height: 14,
+                        child: Text(
+                          'Sudah Mengirim untuk di nilai',
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
+                            color: const Color(0xFF000000),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
