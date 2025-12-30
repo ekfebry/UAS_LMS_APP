@@ -242,3 +242,22 @@ class HomeTab extends StatelessWidget {
                     ),
                   ),
                 ),
+                // Collection Time Label
+                Positioned(
+                  top: 116,
+                  left: 92,
+                  child: SizedBox(
+                    width: 150,
+                    height: 21,
+                    child: Text(
+                      'Waktu Pengumpulan',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 14,
+                        color: Colors.white,
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
