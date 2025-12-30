@@ -625,3 +625,44 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
             ),
+            const SizedBox(height: 7),
+            SizedBox(
+              width: 54,
+              height: 18,
+              child: Text(
+                'Deskripsi',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0.0,
+                  color: Colors.black,
+                  decoration: TextDecoration.none,
+                ),
+              ),
+            ),
+            const SizedBox(height: 7),
+            Container(
+              width: 280,
+              height: 106,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: TextField(
+                controller: _descriptionController,
+                maxLines: null,
+                decoration: const InputDecoration(
+                  border: InputBorder.none,
+                  contentPadding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                ),
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 11,
+                  color: Colors.black,
+                ),
+              ),
+            ),
