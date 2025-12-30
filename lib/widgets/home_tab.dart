@@ -318,3 +318,33 @@ class HomeTab extends StatelessWidget {
             ),
           ],
         ),
+        const SizedBox(height: 10),
+        // Maintenance Background Rectangle
+        Container(
+          width: 400,
+          height: 229,
+          decoration: BoxDecoration(
+            color: const Color.fromARGB(216, 240, 240, 240),
+            borderRadius: BorderRadius.circular(0),
+          ),
+          child: Stack(
+            children: [
+              // Maintenance Pra UAS Text
+              Positioned(
+                top: 15,
+                left: 20,
+                child: SizedBox(
+                  width: 271,
+                  height: 17,
+                  child: Text(
+                    'Maintenance Pra UAS Semester Genap 2020/2021',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 11,
+                      color: const Color(0xFF000000),
+                      height: 1.0,
+                      letterSpacing: 0,
+                    ),
+                  ),
+                ),
+              ),
