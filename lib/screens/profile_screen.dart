@@ -40,3 +40,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 maxLines: 1,
               ),
             ),
+            const SizedBox(height: 5),
+            SizedBox(
+              width: 250,
+              height: 162,
+              child: Text(
+                'Email address\nekfbryntikh@uim.ac.id\n\nProgram Studi\nS1 Teknik Informatika\n\nFakultas\nTEKNIK',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  height: 1.0,
+                  letterSpacing: 0.0,
+                  color: Colors.black,
+                  decoration: TextDecoration.none,
+                ),
+              ),
+            ),
