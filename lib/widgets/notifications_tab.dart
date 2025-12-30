@@ -207,5 +207,55 @@ class NotificationsTab extends StatelessWidget {
                   ),
                 ),
               ),
+              // Fourth Quiz Image
+              Positioned(
+                top: 255, // Adjusted spacing
+                left: 14,
+                child: Image.asset(
+                  'assets/images/quiz.png',
+                  width: 20,
+                  height: 18,
+                ),
+              ),
+              // Fourth Notification Text
+              Positioned(
+                top: 255,
+                left: 36,
+                child: SizedBox(
+                  width: 324,
+                  height: 30,
+                  child: Text(
+                    'Anda telah mengirimkan pengajuan tugas untuk Pengumpulan\nLaporan Akhir Assessment 3 (Tugas Besar)',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 10,
+                      height: 1.0,
+                      letterSpacing: 0.0,
+                      color: Colors.black,
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                ),
+              ),
+              // Fourth Time Text
+              Positioned(
+                top: 280, // Adjusted
+                left: 36,
+                child: SizedBox(
+                  width: 104,
+                  height: 14,
+                  child: Text(
+                    '3 Hari 9 Jam Yang Lalu',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 9,
+                      height: 1.0,
+                      letterSpacing: 0.0,
+                      color: const Color(0x80000000), // 50% opacity black
+                      decoration: TextDecoration.none,
+                    ),
+                  ),
+                ),
+              ),
 
 }
