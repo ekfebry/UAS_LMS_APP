@@ -177,3 +177,12 @@ class ClassesTab extends StatelessWidget {
             color: Colors.white,
           ),
         ),
+        // Back Icon
+        Positioned(
+          top: 40,
+          left: 6,
+          child: GestureDetector(
+            onTap: onBack,
+            child: const Icon(Icons.arrow_back, color: Colors.black, size: 30),
+          ),
+        ),
