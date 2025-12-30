@@ -130,3 +130,28 @@ class SubjectCard extends StatelessWidget {
                 ),
               ),
             ),
+                        // Progress Text
+            Positioned(
+              top: 98,
+              left: 122,
+              child: SizedBox(
+                width: 55,
+                height: 14,
+                child: Text(
+                  progressText,
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 9,
+                    color: const Color(0xFF000000),
+                    height: 1.0,
+                    letterSpacing: 0,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
