@@ -24,6 +24,23 @@ class SubjectCard extends StatelessWidget {
     required this.fillWidth,
   });
 
+    @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => const ClassDashboardScreen(),
+          ),
+        );
+      },
+      child: Container(
+        width: 319,
+        height: 140,
+        margin: const EdgeInsets.symmetric(vertical: 8.0),
+        child: Stack(
+          children: [
+
 class ClassDashboardScreen extends StatelessWidget {
   const ClassDashboardScreen({super.key});
 
