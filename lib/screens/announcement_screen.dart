@@ -65,3 +65,26 @@ class AnnouncementsScreen extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Positioned(
+                    top: 15,
+                    left: 58,
+                    child: SizedBox(
+                      width: 179,
+                      height: 14,
+                      child: Text(
+                        'By Admin Celoe - Rabu, 2 Juni 2021, 10:45',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w300,
+                          fontSize: 9,
+                          height: 1.0,
+                          letterSpacing: 0.0,
+                          color: const Color(0xBF000000), // 75% opacity black
+                          decoration: TextDecoration.none,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
