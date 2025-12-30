@@ -176,3 +176,14 @@ class HomeTab extends StatelessWidget {
             letterSpacing: 0,
           ),
         ),
+        const SizedBox(height: 20),
+        // Task Notification Card
+        GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const AssignmentDetailScreen(title: 'Assignment'),
+              ),
+            );
+          },
