@@ -75,3 +75,425 @@ class _QuizPageScreenState extends State<QuizPageScreen> {
           ],
         ),
       ),
+      body: Stack(
+        children: [
+          Positioned(
+            top: 10,
+            left: 81,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '1',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 10,
+            left: 105,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '2',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 10,
+            left: 129,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '3',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 10,
+            left: 153,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '4',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 10,
+            left: 177,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '5',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 10,
+            left: 201,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '6',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 10,
+            left: 225,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '7',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 10,
+            left: 249,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '8',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 10,
+            left: 273,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '9',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 10,
+            left: 297,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '10',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 32,
+            left: 81,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '11',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 32,
+            left: 105,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '12',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 32,
+            left: 129,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '13',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 32,
+            left: 153,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '14',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 32,
+            left: 177,
+            child: Container(
+              width: 20,
+              height: 20,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: Colors.black,
+                  width: 0.5,
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  '15',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: Colors.black,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
