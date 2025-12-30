@@ -442,7 +442,7 @@ class _ClassDashboardScreenState extends State<ClassDashboardScreen> {
                     onTap: () {
                       Navigator.of(context).push(
                         PageRouteBuilder(
-                          pageBuilder: (context, animation, secondaryAnimation) => const VideoPlayerScreen(),
+                          pageBuilder: (context, animation, secondaryAnimation) => VideoPlayerScreen(),
                           transitionsBuilder: (context, animation, secondaryAnimation, child) {
                             const begin = Offset(1.0, 0.0);
                             const end = Offset.zero;
