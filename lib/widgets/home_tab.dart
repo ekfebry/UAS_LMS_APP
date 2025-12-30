@@ -348,3 +348,26 @@ class HomeTab extends StatelessWidget {
                   ),
                 ),
               ),
+              // Maintenance Image
+              Positioned(
+                top: 35,
+                left: 32,
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      LeftSlideInPageRoute(page: const AnnouncementsScreen()),
+                    );
+                  },
+                  child: Container(
+                    width: 310,
+                    height: 169,
+                    child: Image.asset(
+                      'assets/images/maintenance.png',
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
