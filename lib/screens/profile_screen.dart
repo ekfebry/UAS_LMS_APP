@@ -737,3 +737,172 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     child: const Icon(Icons.arrow_back, color: Colors.white),
                   ),
                 ),
+                 Positioned(
+                  top: 70,
+                  left: 112,
+                  child: Image.asset(
+                    'assets/images/eka.png',
+                    width: 151,
+                    height: 100,
+                  ),
+                ),
+                Positioned(
+                  top: 190,
+                  left: 0,
+                  right: 0,
+                  child: Text(
+                    'EKA FEBRIYANTI KHOLIFAH',
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.poppins(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          body: Container(
+            color: Colors.white,
+            margin: const EdgeInsets.only(top: 40),
+            child: const ProfileTab(),
+          ),
+        ),
+        Positioned(
+          top: 235, // Position below the app bar
+          left: 16,
+          right: 16,
+          child: Material(
+            elevation: 12,
+            borderRadius: BorderRadius.circular(20),
+            child: Container(
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  GestureDetector(
+                    onTap: () => selectTab(0),
+                    child: Text(
+                      'About Me',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
+                        height: 1.0,
+                        letterSpacing: 0.0,
+                        color: _selectedTabIndex == 0 ? Colors.black : Colors.grey,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () => selectTab(1),
+                    child: Text(
+                      'Kelas',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
+                        height: 1.0,
+                        letterSpacing: 0.0,
+                        color: _selectedTabIndex == 1 ? Colors.black : Colors.grey,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () => selectTab(2),
+                    child: Text(
+                      'Edit Profile',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
+                        height: 1.0,
+                        letterSpacing: 0.0,
+                        color: _selectedTabIndex == 2 ? Colors.black : Colors.grey,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+        Positioned(
+          top: 285,
+          left: indicatorLeft,
+          child: Container(
+            width: 31,
+            height: 3,
+            decoration: BoxDecoration(
+              color: const Color(0x80000000),
+              borderRadius: BorderRadius.circular(50),
+            ),
+          ),
+        ),
+        Positioned(
+          top: 340,
+          left: 0,
+          right: 0,
+          bottom: 56,
+          child: Material(
+            color: Colors.transparent,
+            child: SingleChildScrollView(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 23),
+                child: getContent(_selectedTabIndex),
+              ),
+            ),
+          ),
+        ),
+        if (_selectedTabIndex == 0) Positioned(
+          top: 700,
+          left: 261,
+          child: GestureDetector(
+            onTap: () => Navigator.of(context).pushReplacementNamed('/login'),
+            child: Container(
+              width: 104,
+              height: 38,
+              decoration: BoxDecoration(
+                color: const Color(0xFFAF1116),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Stack(
+                children: [
+                  Positioned(
+                    top: 9,
+                    left: 10,
+                    child: const Icon(
+                      Icons.logout,
+                      color: Colors.white,
+                      size: 20,
+                    ),
+                  ),
+                  Positioned(
+                    top: 13,
+                    left: 42,
+                    child: SizedBox(
+                      width: 54,
+                      height: 21,
+                      child: Text(
+                        'Log Out',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 14,
+                          height: 1.0,
+                          letterSpacing: 0.0,
+                          color: Colors.white,
+                          decoration: TextDecoration.none,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
