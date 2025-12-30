@@ -31,3 +31,39 @@ class _ReviewPageScreenState extends State<ReviewPageScreen> {
         ),
         centerTitle: true,
       ),
+      body: SingleChildScrollView(
+        child: SizedBox(
+          height: 1150, 
+          child: Stack(
+            children: [
+          Positioned(
+            top: 20,
+            left: 40,
+            child: Container(
+              width: 295,
+              height: 116,
+              decoration: BoxDecoration(
+                color: const Color(0xFFF7F7F7),
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 35,
+            left: 54,
+            child: SizedBox(
+              width: 62,
+              height: 14,
+              child: Text(
+                'Di Mulai Pada',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
