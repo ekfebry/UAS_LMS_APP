@@ -262,3 +262,112 @@ class _ClassDashboardScreenState extends State<ClassDashboardScreen> {
                     ),
                   ),
                 ),
+                // Second rectangle
+                Positioned(
+                  top: 180,
+                  left: 21,
+                  child: GestureDetector(
+                    onTap: () {
+                      showModalBottomSheet(
+                        context: context,
+                        isScrollControlled: true,
+                        builder: (context) => const MaterialBottomSheetWithTabs(meetingId: 5),
+                      );
+                    },
+                    child: Container(
+                      width: 332,
+                      height: 123,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(5),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.1),
+                            blurRadius: 4,
+                            offset: const Offset(0, 2),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 190,
+                  left: 35,
+                  child: Container(
+                    width: 92,
+                    height: 22,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF53A9E3),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 195,
+                  left: 50,
+                  child: SizedBox(
+                    width: 62,
+                    height: 15,
+                    child: Text(
+                      'Pertemuan 2',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 10,
+                        color: Colors.white,
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 189,
+                  left: 323,
+                  child: SizedBox(
+                    width: 22,
+                    height: 16,
+                    child: Image.asset(
+                      'assets/images/green_tick.png',
+                      width: 22,
+                      height: 16,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 240,
+                  left: 35,
+                  child: SizedBox(
+                    width: 255,
+                    height: 21,
+                    child: Text(
+                      '02 - Konsep User Interface Design',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 14,
+                        color: const Color(0xFF000000),
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 285,
+                  left: 35,
+                  child: SizedBox(
+                    width: 173,
+                    height: 15,
+                    child: Text(
+                      '2 URLs, 1 Kuis, 3 Files, 1 Tugas',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w300,
+                        fontSize: 10,
+                        color: const Color(0x80000000),
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
