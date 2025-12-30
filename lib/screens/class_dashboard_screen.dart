@@ -1469,3 +1469,112 @@ class _MaterialBottomSheetWithTabsState extends State<MaterialBottomSheetWithTab
       _selectedTabIndex = index;
     });
   }
+
+  @override
+  Widget build(BuildContext context) {
+    double indicatorLeft = 97; // Lampiran Materi
+    if (_selectedTabIndex == 1) indicatorLeft = 218; // Tugas dan Kuis
+
+    return Container(
+      height: MediaQuery.of(context).size.height,
+      decoration: const BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(30),
+          topRight: Radius.circular(30),
+        ),
+      ),
+      child: Stack(
+        children: [
+          Positioned(
+            top: 6,
+            left: 133,
+            child: Container(
+              width: 109,
+              height: 6,
+              decoration: BoxDecoration(
+                color: const Color(0x80C4C4C4),
+                borderRadius: BorderRadius.circular(50),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 45,
+            left: 85,
+            child: SizedBox(
+              width: 242,
+              height: 23,
+              child: Text(
+                widget.meetingId == 6 ? 'Pengantar User Interface Design' : 'Konsep User Interface Design',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 15,
+                  color: Colors.black,
+                  height: 1.0,
+                  letterSpacing: 0,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 80,
+            left: 10,
+            child: SizedBox(
+              width: 55,
+              height: 18,
+              child: Text(
+                'Deskripsi',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 12,
+                  color: Colors.black,
+                  height: 1.0,
+                  letterSpacing: 0,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 105,
+            left: 10,
+            child: SizedBox(
+              width: 355,
+              height: 200,
+              child: Text(
+                widget.meetingId == 5
+                    ? 'Konsep dasar User Interface Design akan dipelajari bagaimana membangun sebuah Interaction Design pada antarmuka. Interaction ini sangat penting untuk aplikasi berkomunikasi dengan pengguna. Lalu dipelajari juga poin-poin penting pada interaction design seperti visibility, feedback, limitation, consistency dan affordance. Dan terakhir materi conceptual dan perceptual design interaction akan memberikan gambaran bagaimana bentuk dari Interaction.'
+                    : 'Antarmuka yang dibangun harus memperhatikan prinsip-prinsip desain yang ada. Hal ini diharapkan agar antarmuka yang dibangun bukan hanya menarik secara visual tetapi dengan memperhatikan kaidah-kaidah prinsip desain diharapkan akan mendukung pengguna dalam menggunakan produk secara baik. Pelajaran mengenai Pengantar User Interface Design ini sudah pernah diajarkan dalam mata kuliah Implementasi Desain Antarmuka Pengguna tetap pada matakuliah ini akan direview kembali sehingga dapat menjadi bekal saat memasukki materi mengenai User Experience',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 12,
+                  color: Colors.black,
+                  height: 1.3,
+                  letterSpacing: 0,
+                ),
+                textAlign: TextAlign.justify,
+              ),
+            ),
+          ),
+          if (widget.meetingId != 1) ...[
+            // Lampiran Materi text
+            Positioned(
+              top: 255,
+              left: 73,
+              child: GestureDetector(
+                onTap: () => selectTab(0),
+                child: SizedBox(
+                  width: 98,
+                  height: 18,
+                  child: Text(
+                    'Lampiran Materi',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 12,
+                      color: const Color(0xFF000000),
+                      height: 1.0,
+                      letterSpacing: 0.0,
+                    ),
+                  ),
+                ),
+              ),
+            ),
