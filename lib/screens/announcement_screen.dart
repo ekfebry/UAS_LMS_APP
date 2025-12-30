@@ -212,3 +212,21 @@ class AnnouncementsScreen extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: Container(
+        width: 375,
+        height: 56,
+        decoration: BoxDecoration(
+          color: const Color(0xFFB74848),
+          borderRadius: const BorderRadius.only(
+            topLeft: Radius.circular(40),
+            topRight: Radius.circular(40),
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: const Color(0x40000000),
+              offset: const Offset(0, 4),
+              blurRadius: 4,
+              spreadRadius: 0,
+            ),
+          ],
+        ),
