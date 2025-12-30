@@ -8,3 +8,11 @@ class ProfileScreen extends StatefulWidget {
   @override
    State<ProfileScreen> createState() => _ProfileScreenState();
 }
+
+class _ProfileScreenState extends State<ProfileScreen> {
+  int _selectedTabIndex = 0;
+  final TextEditingController _firstNameController = TextEditingController();
+  final TextEditingController _lastNameController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _countryController = TextEditingController();
+  final TextEditingController _descriptionController = TextEditingController();
