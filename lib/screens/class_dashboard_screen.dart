@@ -1642,3 +1642,45 @@ class _MaterialBottomSheetWithTabsState extends State<MaterialBottomSheetWithTab
                 ),
               ),
             ),
+            Positioned(
+              top: 314,
+              left: 33,
+              child: SizedBox(
+                width: 20,
+                height: 18,
+                child: Image.asset(
+                  'assets/images/link.png',
+                  fit: BoxFit.contain,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 318,
+              left: 57,
+              child: SizedBox(
+                width: 133,
+                height: 15,
+                child: Text(
+                  'Zoom Meeting Syncronous',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 10,
+                    color: const Color(0xFF000000),
+                    height: 1.0,
+                    letterSpacing: 0.0,
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 315,
+              left: 328,
+              child: SizedBox(
+                width: 22,
+                height: 16,
+                child: Image.asset(
+                  'assets/images/green_tick.png',
+                  fit: BoxFit.contain,
+                ),
+              ),
+            ),
