@@ -2074,3 +2074,97 @@ class _MaterialBottomSheetWithTabsState extends State<MaterialBottomSheetWithTab
                   ),
                 ),
               ),
+              // Seventh rectangle
+              Positioned(
+                top: 642,
+                left: 17,
+                child: GestureDetector(
+                  onTap: () async {
+                    await launchUrl(Uri.parse('https://example.com/best-practice-ui-design'));
+                  },
+                  child: Container(
+                    width: 340,
+                    height: 47,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color(0x40000000),
+                          offset: const Offset(1, 1),
+                          blurRadius: 5,
+                          spreadRadius: 0.5,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 654,
+                left: 33,
+                child: SizedBox(
+                  width: 20,
+                  height: 18,
+                  child: Image.asset(
+                    'assets/images/link.png',
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 659,
+                left: 57,
+                child: SizedBox(
+                  width: 200,
+                  height: 15,
+                  child: Text(
+                    'Best Practice UI Design',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 10,
+                      color: const Color(0xFF000000),
+                      height: 1.0,
+                      letterSpacing: 0.0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                top: 659,
+                left: 328,
+                child: SizedBox(
+                  width: 22,
+                  height: 16,
+                  child: Image.asset(
+                    'assets/images/green_tick.png',
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+            ],
+          ],
+          // Content for Tugas dan Kuis
+          if (_selectedTabIndex == 1) ...[
+            if (widget.meetingId == 1) ...[
+              // Rectangle for Kuis - Assessment 2
+              Positioned(
+                top: 314,
+                left: 13,
+                child: Container(
+                  width: 340,
+                  height: 102,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0x40000000),
+                        offset: const Offset(1, 1),
+                        blurRadius: 5,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
