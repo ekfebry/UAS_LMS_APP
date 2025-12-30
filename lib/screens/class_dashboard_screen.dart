@@ -212,3 +212,53 @@ class _ClassDashboardScreenState extends State<ClassDashboardScreen> {
                     ),
                   ),
                 ),
+                Positioned(
+                  top: 40,
+                  left: 323,
+                  child: SizedBox(
+                    width: 22,
+                    height: 16,
+                    child: Image.asset(
+                      'assets/images/grey_tick.png',
+                      width: 22,
+                      height: 16,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 90,
+                  left: 35,
+                  child: SizedBox(
+                    width: 255,
+                    height: 21,
+                    child: Text(
+                      '01 - Pengantar User Interface Design',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 14,
+                        color: const Color(0xFF000000),
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 135,
+                  left: 35,
+                  child: SizedBox(
+                    width: 173,
+                    height: 15,
+                    child: Text(
+                      '3 URLs, 2 Files, 3 Interactive Content',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w300,
+                        fontSize: 10,
+                        color: const Color(0x80000000),
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
