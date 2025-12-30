@@ -1578,3 +1578,67 @@ class _MaterialBottomSheetWithTabsState extends State<MaterialBottomSheetWithTab
                 ),
               ),
             ),
+            // Tugas dan Kuis text
+            Positioned(
+              top: 255,
+              left: 197,
+              child: GestureDetector(
+                onTap: () => selectTab(1),
+                child: SizedBox(
+                  width: 92,
+                  height: 18,
+                  child: Text(
+                    'Tugas dan Kuis',
+                    style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 12,
+                      color: const Color(0xFF000000),
+                      height: 1.0,
+                      letterSpacing: 0.0,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            // Animated rectangle
+            AnimatedPositioned(
+              duration: const Duration(milliseconds: 300),
+              top: 273,
+              left: indicatorLeft,
+              child: Container(
+                width: 50,
+                height: 3,
+                decoration: BoxDecoration(
+                  color: const Color(0xFF000000),
+                  borderRadius: BorderRadius.circular(50),
+                ),
+              ),
+            ),
+          ],
+          // Content for Lampiran Materi
+          if (_selectedTabIndex == 0) ...[
+            Positioned(
+              top: 299,
+              left: 17,
+              child: GestureDetector(
+                onTap: () async {
+                  await launchUrl(Uri.parse('https://lms.telkomuniversity.ac.id/mod/url/view.php?id=1038446'));
+                },
+                child: Container(
+                  width: 340,
+                  height: 47,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0x40000000),
+                        offset: const Offset(1, 1),
+                        blurRadius: 5,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
