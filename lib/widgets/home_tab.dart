@@ -223,3 +223,22 @@ class HomeTab extends StatelessWidget {
                     ),
                   ),
                 ),
+                // Assignment Description
+                Positioned(
+                  top: 69,
+                  left: 59,
+                  child: SizedBox(
+                    width: 218,
+                    height: 18,
+                    child: Text(
+                      'Tugas 01 - UID Android Mobile Game',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
+                        color: Colors.white,
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
