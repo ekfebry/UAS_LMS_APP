@@ -2592,3 +2592,129 @@ class _MaterialBottomSheetWithTabsState extends State<MaterialBottomSheetWithTab
     );
   }
 }
+
+class MaterialBottomSheet extends StatelessWidget {
+  const MaterialBottomSheet({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 50,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(30),
+          topRight: Radius.circular(30),
+        ),
+      ),
+      child: Stack(
+        children: [
+          Positioned(
+            top: 6,
+            left: 133,
+            child: GestureDetector(
+              onVerticalDragEnd: (details) {
+                if (details.velocity.pixelsPerSecond.dy > 0) {
+                  Navigator.of(context).pop();
+                }
+              },
+              child: Container(
+                width: 109,
+                height: 6,
+                decoration: BoxDecoration(
+                  color: const Color(0x80C4C4C4),
+                  borderRadius: BorderRadius.circular(50),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class MaterialDetailAppBar extends StatelessWidget implements PreferredSizeWidget {
+  final String title;
+  const MaterialDetailAppBar({required this.title, super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      backgroundColor: const Color(0xFFB74848),
+      elevation: 0,
+      toolbarHeight: 56,
+      automaticallyImplyLeading: false,
+      flexibleSpace: Stack(
+        children: [
+          Positioned(
+            top: 26,
+            left: 6,
+            child: IconButton(
+              icon: const Icon(Icons.arrow_back, size: 28, color: Colors.white),
+              onPressed: () => Navigator.pop(context),
+            ),
+          ),
+          Positioned(
+            top: 45,
+            left: 80,
+            child: SizedBox(
+              width: 214,
+              height: 20,
+              child: Text(
+                title,
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w600,
+                  fontSize: 13,
+                  color: Colors.white,
+                  height: 1.0,
+                  letterSpacing: 0,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          // Rectangle for page indicator
+          Positioned(
+            top: 42,
+            left: 311,
+            child: Container(
+              width: 53,
+              height: 36,
+              decoration: BoxDecoration(
+                color: const Color(0xFF858688),
+                border: Border.all(
+                  color: Colors.black,
+                  width: 1,
+                ),
+              ),
+            ),
+          ),
+          // Text "Halaman 1/26"
+          Positioned(
+            top: 45,
+            left: 314,
+            child: SizedBox(
+              width: 47,
+              height: 30,
+              child: Text(
+                'Halaman\n1/26',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 10,
+                  color: Colors.black,
+                  height: 1.0,
+                  letterSpacing: 0,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  @override
+  Size get preferredSize => const Size.fromHeight(56);
+}
