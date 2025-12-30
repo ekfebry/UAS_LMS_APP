@@ -1,23 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../widgets/profile_tab.dart';
+import 'package:file_picker/file_picker.dart';
+import '../widgets/upload_file_bottom_sheet.dart';
 
-class AssignmentDetailScreen extends StatelessWidget {
+class AssignmentDetailScreen extends StatefulWidget {
   final String title;
   
   const AssignmentDetailScreen({super.key, required this.title});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-        backgroundColor: const Color(0xFFB74848),
-        foregroundColor: Colors.white,
-      ),
-      body: Center(
-        child: Text('$title Detail Screen'),
-      ),
-    );
-  }
+  State<AssignmentDetailScreen> createState() => _AssignmentDetailScreenState();
 }
