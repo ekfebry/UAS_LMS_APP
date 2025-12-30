@@ -1446,3 +1446,26 @@ class _ClassDashboardScreenState extends State<ClassDashboardScreen> {
     );
   }
 }
+
+class MaterialBottomSheetWithTabs extends StatefulWidget {
+  final int meetingId;
+  const MaterialBottomSheetWithTabs({super.key, required this.meetingId});
+
+  @override
+  State<MaterialBottomSheetWithTabs> createState() => _MaterialBottomSheetWithTabsState();
+}
+
+class _MaterialBottomSheetWithTabsState extends State<MaterialBottomSheetWithTabs> {
+  late int _selectedTabIndex;
+
+  @override
+  void initState() {
+    super.initState();
+    _selectedTabIndex = widget.meetingId == 1 ? 1 : 0;
+  }
+
+  void selectTab(int index) {
+    setState(() {
+      _selectedTabIndex = index;
+    });
+  }
