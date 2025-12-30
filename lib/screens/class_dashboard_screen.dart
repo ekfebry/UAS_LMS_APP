@@ -6,6 +6,24 @@ import 'material_detail_screen.dart';
 import 'video_player_screen.dart';
 import 'quiz_review_screen.dart';
 
+class SubjectCard extends StatelessWidget {
+  final String imagePath;
+  final String date;
+  final String title;
+  final double progress;
+  final String progressText;
+  final double fillWidth;
+
+  const SubjectCard({
+    super.key,
+    required this.imagePath,
+    required this.date,
+    required this.title,
+    required this.progress,
+    required this.progressText,
+    required this.fillWidth,
+  });
+
 class ClassDashboardScreen extends StatelessWidget {
   const ClassDashboardScreen({super.key});
 
