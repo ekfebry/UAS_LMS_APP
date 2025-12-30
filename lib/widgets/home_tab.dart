@@ -371,3 +371,15 @@ class HomeTab extends StatelessWidget {
             ],
           ),
         ),
+        const SizedBox(height: 30),
+        // Progres Kelas Text
+        Text(
+          'Progres Kelas',
+          style: GoogleFonts.poppins(
+            fontWeight: FontWeight.w500,
+            fontSize: 14,
+            color: const Color(0xFF000000),
+            height: 1.0,
+            letterSpacing: 0,
+          ),
+        ),
