@@ -202,3 +202,24 @@ class HomeTab extends StatelessWidget {
                 ),
               ],
             ),
+            child: Stack(
+              children: [
+                // Course Title
+                Positioned(
+                  top: 12,
+                  left: 12,
+                  child: SizedBox(
+                    width: 256,
+                    height: 42,
+                    child: Text(
+                      'DESAIN ANTARMUKA & PENGALAMAN\nPENGGUNA',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 14,
+                        color: Colors.white,
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
