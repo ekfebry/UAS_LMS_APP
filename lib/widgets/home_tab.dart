@@ -22,3 +22,12 @@ class SubjectCard extends StatelessWidget {
     required this.progressText,
     required this.fillWidth,
   });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.of(context).push(
+          LeftSlideInPageRoute(page: const ClassDashboardScreen()),
+        );
+      },
