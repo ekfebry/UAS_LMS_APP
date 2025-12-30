@@ -1684,3 +1684,134 @@ class _MaterialBottomSheetWithTabsState extends State<MaterialBottomSheetWithTab
                 ),
               ),
             ),
+            // Second rectangle
+            Positioned(
+              top: 356,
+              left: 17,
+              child: widget.meetingId == 5
+                  ? Container(
+                      width: 340,
+                      height: 47,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0x40000000),
+                            offset: const Offset(1, 1),
+                            blurRadius: 5,
+                            spreadRadius: 0.5,
+                          ),
+                        ],
+                      ),
+                    )
+                  : GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          PageRouteBuilder(
+                            pageBuilder: (context, animation, secondaryAnimation) => Scaffold(
+                              extendBodyBehindAppBar: true,
+                              appBar: const MaterialDetailAppBar(title: 'Pengantar User Interface Design'),
+                              body: SingleChildScrollView(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/materi1.jpg',
+                                      fit: BoxFit.fitWidth,
+                                      width: double.infinity,
+                                    ),
+                                    Image.asset(
+                                      'assets/images/materi2.jpg',
+                                      fit: BoxFit.fitWidth,
+                                      width: double.infinity,
+                                    ),
+                                    Image.asset(
+                                      'assets/images/materi3.jpg',
+                                      fit: BoxFit.fitWidth,
+                                      width: double.infinity,
+                                    ),
+                                    Image.asset(
+                                      'assets/images/materi4.jpg',
+                                      fit: BoxFit.fitWidth,
+                                      width: double.infinity,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                              const begin = Offset(0.0, 1.0);
+                              const end = Offset.zero;
+                              const curve = Curves.easeIn;
+                              var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                              var offsetAnimation = animation.drive(tween);
+                              return SlideTransition(
+                                position: offsetAnimation,
+                                child: child,
+                              );
+                            },
+                            transitionDuration: const Duration(milliseconds: 300),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        width: 340,
+                        height: 47,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20),
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color(0x40000000),
+                              offset: const Offset(1, 1),
+                              blurRadius: 5,
+                              spreadRadius: 0.5,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+            ),
+            Positioned(
+              top: 371,
+              left: 33,
+              child: SizedBox(
+                width: 20,
+                height: 18,
+                child: Image.asset(
+                  'assets/images/laporan.png',
+                  fit: BoxFit.contain,
+                ),
+              ),
+            ),
+            Positioned(
+              top: 375,
+              left: 57,
+              child: SizedBox(
+                width: 200,
+                height: 15,
+                child: Text(
+                  widget.meetingId == 5 ? 'Elemen-elemen Antarmuka Pengguna' : 'Pengantar User Interface Design',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 10,
+                    color: const Color(0xFF000000),
+                    height: 1.0,
+                    letterSpacing: 0.0,
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
+              top: 372,
+              left: 328,
+              child: SizedBox(
+                width: 22,
+                height: 16,
+                child: Image.asset(
+                  widget.meetingId == 5 ? 'assets/images/green_tick.png' : 'assets/images/grey_tick.png',
+                  fit: BoxFit.contain,
+                ),
+              ),
+            ),
