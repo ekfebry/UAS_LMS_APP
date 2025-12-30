@@ -156,3 +156,104 @@ class AnnouncementDetailScreen extends StatelessWidget {
             ),
           ],
         ),
+        child: Stack(
+          children: [
+            // Home Icon
+            Positioned(
+              top: 8,
+              left: 40,
+              child: GestureDetector(
+                onTap: () => Navigator.of(context).pushNamed('/home'),
+                child: const Icon(
+                  Icons.home,
+                  color: Colors.white,
+                  size: 27.944664001464844,
+                ),
+              ),
+            ),
+            // Home Text
+            Positioned(
+              top: 35,
+              left: 40,
+              child: GestureDetector(
+                onTap: () => Navigator.of(context).pushNamed('/home'),
+                child: Text(
+                  'Home',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 10,
+                    color: Colors.white,
+                    height: 1.0,
+                    letterSpacing: 0,
+                  ),
+                ),
+              ),
+            ),
+            // Classes Icon
+            Positioned(
+              top: 6,
+              left: 165,
+              child: GestureDetector(
+                onTap: () => Navigator.of(context).pushNamed('/class_dashboard'),
+                child: const Icon(
+                  Icons.school,
+                  color: Colors.white,
+                  size: 30.944664001464844,
+                ),
+              ),
+            ),
+            // Classes Text
+            Positioned(
+              top: 35,
+              left: 158,
+              child: GestureDetector(
+                onTap: () => Navigator.of(context).pushNamed('/class_dashboard'),
+                child: Text(
+                  'Kelas Saya',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 10,
+                    color: Colors.white,
+                    height: 1.0,
+                    letterSpacing: 0,
+                  ),
+                ),
+              ),
+            ),
+            // Notifications Icon
+            Positioned(
+              top: 6,
+              left: 292,
+              child: GestureDetector(
+                onTap: () => Navigator.of(context).pushNamed('/announcements'),
+                child: const Icon(
+                  Icons.notifications,
+                  color: Colors.white,
+                  size: 27.944664001464844,
+                ),
+              ),
+            ),
+            // Notifications Text
+            Positioned(
+              top: 35,
+              left: 286,
+              child: GestureDetector(
+                onTap: () => Navigator.of(context).pushNamed('/announcements'),
+                child: Text(
+                  'Notifikasi',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 10,
+                    color: Colors.white,
+                    height: 1.0,
+                    letterSpacing: 0,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
