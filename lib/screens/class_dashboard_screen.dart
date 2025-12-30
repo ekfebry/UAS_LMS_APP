@@ -1201,3 +1201,106 @@ class _ClassDashboardScreenState extends State<ClassDashboardScreen> {
         return Container();
     }
   }
+  
+  @override
+  Widget build(BuildContext context) {
+    void selectTab(int index) {
+      setState(() {
+        _selectedTabIndex = index;
+      });
+    }
+
+    // Calculate indicator position based on selected tab
+    double indicatorLeft = 95; // Materi
+    if (_selectedTabIndex == 1) indicatorLeft = 240; // Tugas & Kuis
+
+    return Stack(
+      children: [
+        Scaffold(
+          appBar: AppBar(
+            backgroundColor: const Color(0xFFB74848),
+            elevation: 0,
+            toolbarHeight: 150,
+            automaticallyImplyLeading: false,
+            flexibleSpace: Stack(
+              children: [
+                Positioned(
+                  top: 36,
+                  left: 6,
+                  child: GestureDetector(
+                    onTap: () => Navigator.of(context).pop(),
+                    child: const Icon(Icons.arrow_back, color: Colors.white),
+                  ),
+                ),
+                Positioned(
+                  top: 75,
+                  left: 0,
+                  right: 0,
+                  child: Text(
+                    'DESAIN ANTARMUKA & PENGALAMAN\nPENGGUNA D4SM-42-03 [ADY]',
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.poppins(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          body: Container(
+            color: Colors.white,
+            margin: const EdgeInsets.only(top: 40),
+            child: getContent(_selectedTabIndex),
+          ),
+        ),
+        Positioned(
+          top: 155, // Position below the app bar
+          left: 16,
+          right: 16,
+          child: Material(
+            elevation: 12,
+            borderRadius: BorderRadius.circular(15),
+            child: Container(
+              height: 45,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  GestureDetector(
+                    onTap: () => selectTab(0),
+                    child: Text(
+                      'Materi',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
+                        height: 1.0,
+                        letterSpacing: 0.0,
+                        color: _selectedTabIndex == 0 ? Colors.black : Colors.grey,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () => selectTab(1),
+                    child: Text(
+                      'Tugas Dan Kuis',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 12,
+                        height: 1.0,
+                        letterSpacing: 0.0,
+                        color: _selectedTabIndex == 1 ? Colors.black : Colors.grey,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
