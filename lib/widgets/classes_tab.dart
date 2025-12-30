@@ -49,3 +49,22 @@ class SubjectCard extends StatelessWidget {
                 child: Image.asset(imagePath, fit: BoxFit.cover),
               ),
             ),
+             // Date Text
+            Positioned(
+              top: 0,
+              left: 122,
+              child: SizedBox(
+                width: 29,
+                height: 14,
+                child: Text(
+                  date,
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 9,
+                    color: const Color(0xFF000000),
+                    height: 1.0,
+                    letterSpacing: 0,
+                  ),
+                ),
+              ),
+            ),
