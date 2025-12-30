@@ -224,3 +224,80 @@ class _QuizReviewScreenState extends State<QuizReviewScreen> {
               ),
             ),
           ),
+          Positioned(
+            top: 430,
+            left: 240,
+            child: SizedBox(
+              width: 19,
+              child: Text(
+                '85,0',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 9,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+          Positioned(
+            top: 430,
+            left: 320,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  PageRouteBuilder(
+                    pageBuilder: (context, animation, secondaryAnimation) =>
+                        const ReviewPageScreen(),
+                    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                      const begin = Offset(-1.0, 0.0);
+                      const end = Offset.zero;
+                      const curve = Curves.easeOut;
+                      var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                      var offsetAnimation = animation.drive(tween);
+                      return SlideTransition(
+                        position: offsetAnimation,
+                        child: child,
+                      );
+                    },
+                    transitionDuration: const Duration(milliseconds: 300),
+                  ),
+                );
+              },
+              child: SizedBox(
+                width: 22,
+                child: Text(
+                  'Lihat',
+                  style: GoogleFonts.poppins(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 9,
+                    height: 1.0,
+                    letterSpacing: 0,
+                    color: const Color(0xFF0E43FF),
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            top: 500,
+            left: 10,
+            child: SizedBox(
+              width: 264,
+              child: Text(
+                'Nilai Akhir Anda Unutuk Kuis Ini Adalah 85.0 / 100.00',
+                style: GoogleFonts.poppins(
+                  fontWeight: FontWeight.w600,
+                  fontSize: 11,
+                  height: 1.0,
+                  letterSpacing: 0,
+                  color: Colors.black,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
