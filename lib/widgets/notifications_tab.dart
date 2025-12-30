@@ -29,5 +29,25 @@ class NotificationsTab extends StatelessWidget {
             child: const Icon(Icons.arrow_back, color: Colors.black, size: 30),
           ),
         ),
+        // Notifikasi Text
+        Positioned(
+          top: 60,
+          left: 146,
+          child: SizedBox(
+            width: 84,
+            height: 27,
+            child: Text(
+              'Notifikasi',
+              style: GoogleFonts.poppins(
+                fontWeight: FontWeight.w500,
+                fontSize: 18,
+                height: 1.0,
+                letterSpacing: 0.0,
+                color: Colors.black,
+                decoration: TextDecoration.none,
+              ),
+            ),
+          ),
+        ),
 
 }
