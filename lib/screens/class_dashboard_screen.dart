@@ -938,3 +938,143 @@ class _ClassDashboardScreenState extends State<ClassDashboardScreen> {
                     ),
                   ),
                 ),
+                // Second rectangle
+                Positioned(
+                  top: 180,
+                  left: 21,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        PageRouteBuilder(
+                          pageBuilder: (context, animation, secondaryAnimation) =>
+                              AssignmentDetailScreen(
+                            title: 'Tugas 01 - UID Android Mobile Game',
+                          ),
+                          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+                            const begin = Offset(-1.0, 0.0);
+                            const end = Offset.zero;
+                            const curve = Curves.easeIn;
+                            final tween =
+                                Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+                            final offsetAnimation = animation.drive(tween);
+                            return SlideTransition(
+                              position: offsetAnimation,
+                              child: child,
+                            );
+                          },
+                          transitionDuration: const Duration(milliseconds: 300),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      width: 332,
+                      height: 123,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(5),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.1),
+                            blurRadius: 4,
+                            offset: const Offset(0, 2),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 190,
+                  left: 35,
+                  child: Container(
+                    width: 92,
+                    height: 22,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF53A9E3),
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 195,
+                  left: 66,
+                  child: SizedBox(
+                    width: 62,
+                    height: 15,
+                    child: Text(
+                      'Tugas',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 10,
+                        color: Colors.white,
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 189,
+                  left: 323,
+                  child: SizedBox(
+                    width: 22,
+                    height: 16,
+                    child: Image.asset(
+                      'assets/images/grey_tick.png',
+                      width: 22,
+                      height: 16,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 240,
+                  left: 85,
+                  child: SizedBox(
+                    width: 255,
+                    height: 21,
+                    child: Text(
+                      'Tugas 01 - UID Android Mobile Game',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 14,
+                        color: const Color(0xFF000000),
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 285,
+                  left: 35,
+                  child: SizedBox(
+                    width: 280,
+                    height: 15,
+                    child: Text(
+                      'Tenggat Waktu : 26 Februari 2021 23:59 WIB',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w300,
+                        fontSize: 10,
+                        color: const Color(0x80000000),
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  top: 230,
+                  left: 35,
+                  child: Opacity(
+                    opacity: 1,
+                    child: SizedBox(
+                      width: 46,
+                      height: 37,
+                      child: Image.asset(
+                        'assets/images/laporan.png',
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ),
+                ),
