@@ -261,3 +261,26 @@ class HomeTab extends StatelessWidget {
                     ),
                   ),
                 ),
+                // Deadline
+                Positioned(
+                  top: 137,
+                  left: 89,
+                  child: SizedBox(
+                    width: 158,
+                    height: 17,
+                    child: Text(
+                      'Jumat 26 Februari, 23:59 WIB',
+                      style: GoogleFonts.poppins(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 11,
+                        color: Colors.white,
+                        height: 1.0,
+                        letterSpacing: 0,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
