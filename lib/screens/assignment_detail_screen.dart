@@ -195,3 +195,39 @@ class _AssignmentDetailScreenState extends State<AssignmentDetailScreen> {
                   ],
                 ),
               ),
+              const SizedBox(height: 35),
+              SizedBox(
+                height: 50,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 0,
+                      left: 0,
+                      child: Text(
+                        'Sisa Waktu',
+                        style: GoogleFonts.poppins(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 13,
+                          color: const Color(0xFF000000),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: 0,
+                      left: 120,
+                      child: SizedBox(
+                        width: 300,
+                        height: 40,
+                        child: Text(
+                          'Tugas sudah dikirim 4 Hari 6 Jam\nSebelumnya',
+                          style: GoogleFonts.poppins(
+                            fontWeight: FontWeight.w300,
+                            fontSize: 13,
+                            color: const Color(0xFF000000),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
